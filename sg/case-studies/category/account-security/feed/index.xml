@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Account Security</title>
+	<atom:link href="/case-studies/category/account-security/feed/" rel="self" type="application/rss+xml" />
+	<link></link>
+	<description>MSG91 cloud communication platform- SMS, Email, Voice, Authentication</description>
+	<lastBuildDate>Wed, 12 Aug 2020 06:56:23 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9</generator>
+
+<image>
+	<url>/wp-content/uploads/sites/10/2020/06/cropped-logo-32x32.png</url>
+	<title>Account Security</title>
+	<link></link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Milkbasket sends regular updates to their customers’ via MSG91</title>
+		<link>/case-studies/milkbasket/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=milkbasket</link>
+					<comments>/case-studies/milkbasket/#respond</comments>
+		
+		<dc:creator><![CDATA[faiz]]></dc:creator>
+		<pubDate>Mon, 27 Jul 2020 12:15:17 +0000</pubDate>
+				<category><![CDATA[Account Security]]></category>
+		<category><![CDATA[All]]></category>
+		<category><![CDATA[Build In Communication]]></category>
+		<category><![CDATA[Startups]]></category>
+		<category><![CDATA[E-commerce]]></category>
+		<category><![CDATA[OTP]]></category>
+		<category><![CDATA[Services]]></category>
+		<category><![CDATA[Startup]]></category>
+		<category><![CDATA[Transactional SMS]]></category>
+		<guid isPermaLink="false">/in/?p=3162</guid>
+
+					<description><![CDATA[]]></description>
+										<content:encoded><![CDATA[]]></content:encoded>
+					
+					<wfw:commentRss>/case-studies/milkbasket/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Razorpay ensures their customers’ security via MSG91</title>
+		<link>/case-studies/razorpay/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=razorpay</link>
+					<comments>/case-studies/razorpay/#respond</comments>
+		
+		<dc:creator><![CDATA[faiz]]></dc:creator>
+		<pubDate>Mon, 27 Jul 2020 12:07:14 +0000</pubDate>
+				<category><![CDATA[Account Security]]></category>
+		<category><![CDATA[All]]></category>
+		<category><![CDATA[Startups]]></category>
+		<category><![CDATA[Fintech]]></category>
+		<category><![CDATA[OTP]]></category>
+		<category><![CDATA[Startup]]></category>
+		<guid isPermaLink="false">/in/?p=3168</guid>
+
+					<description><![CDATA[]]></description>
+										<content:encoded><![CDATA[]]></content:encoded>
+					
+					<wfw:commentRss>/case-studies/razorpay/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Zebpay ensures their customers’ security via MSG91</title>
+		<link>/case-studies/zebpay/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=zebpay</link>
+					<comments>/case-studies/zebpay/#respond</comments>
+		
+		<dc:creator><![CDATA[faiz]]></dc:creator>
+		<pubDate>Mon, 27 Jul 2020 12:05:38 +0000</pubDate>
+				<category><![CDATA[Account Security]]></category>
+		<category><![CDATA[All]]></category>
+		<category><![CDATA[Startups]]></category>
+		<category><![CDATA[Fintech]]></category>
+		<category><![CDATA[OTP]]></category>
+		<category><![CDATA[Startup]]></category>
+		<guid isPermaLink="false">/in/?p=3171</guid>
+
+					<description><![CDATA[]]></description>
+										<content:encoded><![CDATA[]]></content:encoded>
+					
+					<wfw:commentRss>/case-studies/zebpay/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>GrabOnRent updates customers of their orders and offers with SMS via MSG91</title>
+		<link>/case-studies/grabonrent/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=grabonrent</link>
+					<comments>/case-studies/grabonrent/#respond</comments>
+		
+		<dc:creator><![CDATA[faiz]]></dc:creator>
+		<pubDate>Mon, 27 Jul 2020 11:43:11 +0000</pubDate>
+				<category><![CDATA[Account Security]]></category>
+		<category><![CDATA[All]]></category>
+		<category><![CDATA[Build In Communication]]></category>
+		<category><![CDATA[Startups]]></category>
+		<category><![CDATA[OTP]]></category>
+		<category><![CDATA[Services]]></category>
+		<category><![CDATA[Startup]]></category>
+		<category><![CDATA[Transactional SMS]]></category>
+		<guid isPermaLink="false">/in/?p=3195</guid>
+
+					<description><![CDATA[]]></description>
+										<content:encoded><![CDATA[]]></content:encoded>
+					
+					<wfw:commentRss>/case-studies/grabonrent/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Leegality keeps their clients updated with SMS via MSG91</title>
+		<link>/case-studies/leegality/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=leegality</link>
+					<comments>/case-studies/leegality/#respond</comments>
+		
+		<dc:creator><![CDATA[faiz]]></dc:creator>
+		<pubDate>Mon, 27 Jul 2020 11:35:04 +0000</pubDate>
+				<category><![CDATA[Account Security]]></category>
+		<category><![CDATA[All]]></category>
+		<category><![CDATA[Build In Communication]]></category>
+		<category><![CDATA[Startups]]></category>
+		<category><![CDATA[OTP]]></category>
+		<category><![CDATA[Services]]></category>
+		<category><![CDATA[Startup]]></category>
+		<category><![CDATA[Transactional SMS]]></category>
+		<guid isPermaLink="false">/in/?p=3204</guid>
+
+					<description><![CDATA[]]></description>
+										<content:encoded><![CDATA[]]></content:encoded>
+					
+					<wfw:commentRss>/case-studies/leegality/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>OxeBox secure their customers’ accounts via MSG91</title>
+		<link>/case-studies/oxebox/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=oxebox</link>
+					<comments>/case-studies/oxebox/#respond</comments>
+		
+		<dc:creator><![CDATA[faiz]]></dc:creator>
+		<pubDate>Mon, 27 Jul 2020 11:32:44 +0000</pubDate>
+				<category><![CDATA[Account Security]]></category>
+		<category><![CDATA[All]]></category>
+		<category><![CDATA[Startups]]></category>
+		<category><![CDATA[OTP]]></category>
+		<category><![CDATA[Services]]></category>
+		<category><![CDATA[Startup]]></category>
+		<guid isPermaLink="false">/in/?p=3207</guid>
+
+					<description><![CDATA[]]></description>
+										<content:encoded><![CDATA[]]></content:encoded>
+					
+					<wfw:commentRss>/case-studies/oxebox/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Loco safeguards their customers’ accounts with OTP SMS via MSG91</title>
+		<link>/case-studies/loco/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=loco</link>
+					<comments>/case-studies/loco/#respond</comments>
+		
+		<dc:creator><![CDATA[faiz]]></dc:creator>
+		<pubDate>Mon, 27 Jul 2020 11:30:56 +0000</pubDate>
+				<category><![CDATA[Account Security]]></category>
+		<category><![CDATA[All]]></category>
+		<category><![CDATA[Startups]]></category>
+		<category><![CDATA[OTP]]></category>
+		<category><![CDATA[Startup]]></category>
+		<category><![CDATA[Trivia Game]]></category>
+		<guid isPermaLink="false">/in/?p=3210</guid>
+
+					<description><![CDATA[]]></description>
+										<content:encoded><![CDATA[]]></content:encoded>
+					
+					<wfw:commentRss>/case-studies/loco/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Mahindra &#038; Mahindra Automotive Division keeps their customers updated with SMS via MSG91</title>
+		<link>/case-studies/mahindra-mahindra-automotive-division/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=mahindra-mahindra-automotive-division</link>
+					<comments>/case-studies/mahindra-mahindra-automotive-division/#respond</comments>
+		
+		<dc:creator><![CDATA[faiz]]></dc:creator>
+		<pubDate>Mon, 27 Jul 2020 11:26:25 +0000</pubDate>
+				<category><![CDATA[Account Security]]></category>
+		<category><![CDATA[Build In Communication]]></category>
+		<category><![CDATA[Automobile]]></category>
+		<category><![CDATA[OTP]]></category>
+		<category><![CDATA[Services]]></category>
+		<category><![CDATA[Transactional SMS]]></category>
+		<guid isPermaLink="false">/in/?p=3217</guid>
+
+					<description><![CDATA[]]></description>
+										<content:encoded><![CDATA[]]></content:encoded>
+					
+					<wfw:commentRss>/case-studies/mahindra-mahindra-automotive-division/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Smart Shift ensures a hassle-free shift via MSG91</title>
+		<link>/case-studies/smart-shift/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=smart-shift</link>
+					<comments>/case-studies/smart-shift/#respond</comments>
+		
+		<dc:creator><![CDATA[faiz]]></dc:creator>
+		<pubDate>Mon, 27 Jul 2020 11:18:02 +0000</pubDate>
+				<category><![CDATA[Account Security]]></category>
+		<category><![CDATA[Build In Communication]]></category>
+		<category><![CDATA[Logistics]]></category>
+		<category><![CDATA[OTP]]></category>
+		<category><![CDATA[Services]]></category>
+		<category><![CDATA[Transactional SMS]]></category>
+		<guid isPermaLink="false">/in/?p=3223</guid>
+
+					<description><![CDATA[]]></description>
+										<content:encoded><![CDATA[]]></content:encoded>
+					
+					<wfw:commentRss>/case-studies/smart-shift/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Mahindra Saboro sends order updates to its customers with SMS via MSG91</title>
+		<link>/case-studies/mahindra-saboro/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=mahindra-saboro</link>
+					<comments>/case-studies/mahindra-saboro/#respond</comments>
+		
+		<dc:creator><![CDATA[faiz]]></dc:creator>
+		<pubDate>Mon, 27 Jul 2020 11:15:56 +0000</pubDate>
+				<category><![CDATA[Account Security]]></category>
+		<category><![CDATA[Build In Communication]]></category>
+		<category><![CDATA[E-commerce]]></category>
+		<category><![CDATA[OTP]]></category>
+		<category><![CDATA[Transactional SMS]]></category>
+		<guid isPermaLink="false">/in/?p=3226</guid>
+
+					<description><![CDATA[]]></description>
+										<content:encoded><![CDATA[]]></content:encoded>
+					
+					<wfw:commentRss>/case-studies/mahindra-saboro/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>
