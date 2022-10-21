@@ -1,0 +1,9 @@
+[[redirects]]
+  from = "/"
+  to = "/us"
+  status = 301
+  force = false
+  query = {path = ":path"}
+  conditions = {    
+    Country = ["US"]    
+    }
