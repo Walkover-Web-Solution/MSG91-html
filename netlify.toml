@@ -4,6 +4,4 @@
   status = 301
   force = false
   query = {path = ":path"}
-  conditions = {    
-    Country = ["US"]    
-    }
+  conditions = {Country = ["US"]}
