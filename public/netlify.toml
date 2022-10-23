@@ -1,6 +1,0 @@
-[[redirects]]
-  from = "/*"
-  to = "/us/"
-  status = 301
-  force = true  
-  conditions = {Country = ["US"]}
