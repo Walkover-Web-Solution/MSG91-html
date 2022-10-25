@@ -4374,6 +4374,10 @@ color:#E9EDF0!important;
   color: white;
 }
 
+.content {
+  padding: 16px;
+}
+
 .sticky {
   position: fixed !important;
   top: 70px !important;
