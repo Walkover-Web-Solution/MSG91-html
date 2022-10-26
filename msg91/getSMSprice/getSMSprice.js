@@ -6,8 +6,9 @@ const handler = async function () {
     if (!response.ok) {
       // NOT res.status >= 200 && res.status < 300
       let str = response.statusText;
-      let json = str.slice(1,-1);
-      return { statusCode: response.status, body: json }
+      let jsn = str.slice(1,-1);
+      jsn = JSON.stringify(jsn);
+      return { statusCode: response.status, body: jsn }
     }
     const data = await response.json()
 
