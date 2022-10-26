@@ -2,9 +2,7 @@ const fetch = require('node-fetch')
 
 const handler = async function () {
   try {
-    const response = await fetch('https://control.msg91.com/action_layer.php?action=511&request=pricing_details&wallet=1&country=india&currency=INR&noOfSMS=5000', {
-      headers: { Accept: 'application/json' },
-    })
+    const response = await fetch('https://control.msg91.com/action_layer.php?action=511&request=pricing_details&wallet=1&country=india&currency=INR&noOfSMS=5000')
     if (!response.ok) {
       // NOT res.status >= 200 && res.status < 300
       return { statusCode: response.status, body: response.statusText }
