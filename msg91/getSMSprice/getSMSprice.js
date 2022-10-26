@@ -1,13 +1,17 @@
 const fetch = require('node-fetch')
 
-const handler = async function () {
+const handler = async function (event) {
+  const country = event.queryStringParameters.country;
+  const currency = event.queryStringParameters.currency;
+  const noOfSMS = event.queryStringParameters.noOfSMS;
   try {
-    const response = await fetch('https://control.msg91.com/action_layer.php?action=511&request=pricing_details&wallet=1&country=india&currency=INR&noOfSMS=5000')
+    const response = await fetch(`https://control.msg91.com/action_layer.php?action=511&request=pricing_details&wallet=1&country=${country}&currency=${currency}&noOfSMS=${noOfSMS}`)
     if (!response.ok) {
       // NOT res.status >= 200 && res.status < 300      
       return { statusCode: response.status, body: response.statusText }
     }
-    const data = await response.text()
+    let str = response.text();    
+    const data = await str;
 
     return {
       statusCode: 200,
