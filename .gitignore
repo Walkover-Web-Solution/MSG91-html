@@ -1,5 +1,6 @@
 # dependencies
 /node_modules
+/nanogen
 /package-lock.json
 
 

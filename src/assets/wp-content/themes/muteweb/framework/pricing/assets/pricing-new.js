@@ -145,7 +145,7 @@ function makeApiCall(data, type) {
       type: "POST",
       url: data.apiUrl,
       //url: my_ajax_object.ajax_url + "?ver=" + t.getTime(),
-      dataType: "text",
+      dataType: "json",
       data: data,
       success: function (result) {
         var obj = result.data;
@@ -563,8 +563,8 @@ jQuery(document).ready(function ($) {
 
   // init apis
   getSmsPricing();
-  /*getEmailPricingNew();
-  getSendOtpPricing(); */
+  getEmailPricingNew();
+  getSendOtpPricing();
 
   setTimeout(function () {
     getEmailPricing();

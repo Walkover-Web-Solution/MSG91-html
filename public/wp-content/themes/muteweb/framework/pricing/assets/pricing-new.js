@@ -109,7 +109,7 @@ function getSmsPricing() {
   data["noOfSMS"] = jQuery("#noOfSMS").val();
   data["currency"] = jQuery("#currency").val();
   data["originCountry"] = ___ORIGIN_COUNTRY;
-  data["apiUrl"] = "https://control.msg91.com/action_layer.php";
+  data["apiUrl"] = "https://msg91.netlify.app/.netlify/functions/getSMSprice?country="+data.country+"&currency="+data.currency+"&noOfSMS="+data.noOfSMS;
   data["action"] = "fetchPricing";
   if (data) {
     makeApiCall(data, "text");
@@ -143,17 +143,18 @@ function makeApiCall(data, type) {
   if (type !== "EMAIL_NEW") {
     jQuery.ajax({
       type: "POST",
-      url: "https://msg91.netlify.app/.netlify/functions/getSMSprice",
+      url: data.apiUrl,
       //url: my_ajax_object.ajax_url + "?ver=" + t.getTime(),
       dataType: "json",
       data: data,
       success: function (result) {
         var obj = result.data;
+        console.log('makeApiCall', obj);
         if (typeof obj == "string") {
           obj = obj.replace(/[()]/g, "");
           obj = JSON.parse(obj);
         }
-        if (type == "text") {
+        if (type == "text") {          
           if (type_re == "sendOtp_text") {
             drawUiSendOtp(data, obj);
           } else {
@@ -167,10 +168,9 @@ function makeApiCall(data, type) {
           drawUiForVoice(data, obj);
         }
       },
-      error: function (err) {
+      error: function (err) {        
         drawUiSendOtp(data, undefined);
         drawUi(data, undefined);
-
         throw new Error(err);
       },
     });
