@@ -168,8 +168,7 @@ function makeApiCall(data, type) {
           drawUiForVoice(data, obj);
         }
       },
-      error: function (err) {
-        console.log('makeApiCall', obj);
+      error: function (err) {        
         drawUiSendOtp(data, undefined);
         drawUi(data, undefined);
         throw new Error(err);
