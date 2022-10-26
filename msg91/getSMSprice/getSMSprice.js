@@ -10,7 +10,8 @@ const handler = async function (event) {
       // NOT res.status >= 200 && res.status < 300      
       return { statusCode: response.status, body: response.statusText }
     }
-    let str = response.text();    
+    let str = response.text();
+    //let jsnStr = JSON.stringify(str)
     const data = await str;
 
     return {
