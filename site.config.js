@@ -1,7 +1,7 @@
 module.exports = {
   build: {
     srcPath: './src',
-    outputPath: './nanogen'
+    outputPath: './public'
   },
   site: {
     title: 'MSG91'
