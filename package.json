@@ -12,5 +12,8 @@
   "devDependencies": {
     "nanogen": "^0.4.2"
   },
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "node-fetch": "^2.6.7"
+  }
 }
