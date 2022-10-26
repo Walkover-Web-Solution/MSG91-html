@@ -173,10 +173,13 @@ a{
 }
 #main-header{
     position: sticky;
-    top:0;
+    top:-1px;
     z-index: 9999;
     background-color: white !important;
     transition: top .35s cubic-bezier(.4,0,.2,1);
+}
+#main-header.stuck{    
+    box-shadow: 1px 0 3px rgb(0 0 0 / 0.2);
 }
 .navbar-nav li a:hover,.navbar-nav li.current-menu-item a,a:hover{
     color:#2975b9
@@ -4244,12 +4247,11 @@ li#mega-menu-item-25 a:hover, #mega-menu-wrap-primary-menu ul.mega-sub-menu a:ho
 }
 .main-header .mega-sub-menu li#mega-menu-2076-0,
 .main-header .mega-sub-menu li#mega-menu-23-0{
-    max-width: 1000px !important;    
-    border: 1px solid #d8d2d2 !important;
+    max-width: 1000px !important;        
     float: right !important;
     border-radius: 10px !important;
     margin-left: 75px !important;
-    box-shadow: -2px 1px 17px #b3b3b3 !important;
+    box-shadow: 0 2px 6px rgb(0 0 0 / 0.2) !important;
     background: #FFF !important;
 }
 /*............................hellofea page css............................*/
@@ -5012,7 +5014,7 @@ ul#mega-menu-primary-menu li a:hover {
 } */
 
 .productchannel ul li.mega-menu-row {
-    box-shadow: -2px 1px 17px #b3b3b3 !important;
+    box-shadow: 0 2px 6px rgb(0 0 0 / 0.2) !important;
     border-radius: 8px !important;
     top: 0px !important;
     /*height: 475px !important;*/

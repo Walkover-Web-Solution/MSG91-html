@@ -179,7 +179,7 @@
 @media only screen and (min-width: 1001px) {
   #mega-menu-wrap-primary-menu #mega-menu-primary-menu[data-effect="fade"] li.mega-menu-item > ul.mega-sub-menu {
     opacity: 0;
-    transition: opacity 200ms ease-in, visibility 200ms ease-in;
+    transition: opacity 50ms ease-in, visibility 50ms ease-in;
   }
   #mega-menu-wrap-primary-menu #mega-menu-primary-menu[data-effect="fade"].mega-no-js li.mega-menu-item:hover > ul.mega-sub-menu, #mega-menu-wrap-primary-menu #mega-menu-primary-menu[data-effect="fade"].mega-no-js li.mega-menu-item:focus > ul.mega-sub-menu, #mega-menu-wrap-primary-menu #mega-menu-primary-menu[data-effect="fade"] li.mega-menu-item.mega-toggle-on > ul.mega-sub-menu, #mega-menu-wrap-primary-menu #mega-menu-primary-menu[data-effect="fade"] li.mega-menu-item.mega-menu-megamenu.mega-toggle-on ul.mega-sub-menu {
     opacity: 1;
@@ -187,7 +187,7 @@
   #mega-menu-wrap-primary-menu #mega-menu-primary-menu[data-effect="fade_up"] li.mega-menu-item.mega-menu-megamenu > ul.mega-sub-menu, #mega-menu-wrap-primary-menu #mega-menu-primary-menu[data-effect="fade_up"] li.mega-menu-item.mega-menu-flyout ul.mega-sub-menu {
     opacity: 0;
     transform: translate(0, 10px);
-    transition: opacity 200ms ease-in, transform 200ms ease-in, visibility 200ms ease-in;
+    transition: opacity 50ms ease-in, transform 50ms ease-in, visibility 50ms ease-in;
   }
   #mega-menu-wrap-primary-menu #mega-menu-primary-menu[data-effect="fade_up"].mega-no-js li.mega-menu-item:hover > ul.mega-sub-menu, #mega-menu-wrap-primary-menu #mega-menu-primary-menu[data-effect="fade_up"].mega-no-js li.mega-menu-item:focus > ul.mega-sub-menu, #mega-menu-wrap-primary-menu #mega-menu-primary-menu[data-effect="fade_up"] li.mega-menu-item.mega-toggle-on > ul.mega-sub-menu, #mega-menu-wrap-primary-menu #mega-menu-primary-menu[data-effect="fade_up"] li.mega-menu-item.mega-menu-megamenu.mega-toggle-on ul.mega-sub-menu {
     opacity: 1;
@@ -195,7 +195,7 @@
   }
   #mega-menu-wrap-primary-menu #mega-menu-primary-menu[data-effect="slide_up"] li.mega-menu-item.mega-menu-megamenu > ul.mega-sub-menu, #mega-menu-wrap-primary-menu #mega-menu-primary-menu[data-effect="slide_up"] li.mega-menu-item.mega-menu-flyout ul.mega-sub-menu {
     transform: translate(0, 10px);
-    transition: transform 200ms ease-in, visibility 200ms ease-in;
+    transition: transform 50ms ease-in, visibility 50ms ease-in;
   }
   #mega-menu-wrap-primary-menu #mega-menu-primary-menu[data-effect="slide_up"].mega-no-js li.mega-menu-item:hover > ul.mega-sub-menu, #mega-menu-wrap-primary-menu #mega-menu-primary-menu[data-effect="slide_up"].mega-no-js li.mega-menu-item:focus > ul.mega-sub-menu, #mega-menu-wrap-primary-menu #mega-menu-primary-menu[data-effect="slide_up"] li.mega-menu-item.mega-toggle-on > ul.mega-sub-menu, #mega-menu-wrap-primary-menu #mega-menu-primary-menu[data-effect="slide_up"] li.mega-menu-item.mega-menu-megamenu.mega-toggle-on ul.mega-sub-menu {
     transform: translate(0, 0);
@@ -1602,7 +1602,7 @@ body .reach-form-text h2 {
 @media only screen and (min-width: 1001px) {
   #mega-menu-wrap-direct-signup-menu #mega-menu-direct-signup-menu[data-effect="fade"] li.mega-menu-item > ul.mega-sub-menu {
     opacity: 0;
-    transition: opacity 200ms ease-in, visibility 200ms ease-in;
+    transition: opacity 50ms ease-in, visibility 50ms ease-in;
   }
   #mega-menu-wrap-direct-signup-menu #mega-menu-direct-signup-menu[data-effect="fade"].mega-no-js li.mega-menu-item:hover > ul.mega-sub-menu, #mega-menu-wrap-direct-signup-menu #mega-menu-direct-signup-menu[data-effect="fade"].mega-no-js li.mega-menu-item:focus > ul.mega-sub-menu, #mega-menu-wrap-direct-signup-menu #mega-menu-direct-signup-menu[data-effect="fade"] li.mega-menu-item.mega-toggle-on > ul.mega-sub-menu, #mega-menu-wrap-direct-signup-menu #mega-menu-direct-signup-menu[data-effect="fade"] li.mega-menu-item.mega-menu-megamenu.mega-toggle-on ul.mega-sub-menu {
     opacity: 1;
@@ -1610,7 +1610,7 @@ body .reach-form-text h2 {
   #mega-menu-wrap-direct-signup-menu #mega-menu-direct-signup-menu[data-effect="fade_up"] li.mega-menu-item.mega-menu-megamenu > ul.mega-sub-menu, #mega-menu-wrap-direct-signup-menu #mega-menu-direct-signup-menu[data-effect="fade_up"] li.mega-menu-item.mega-menu-flyout ul.mega-sub-menu {
     opacity: 0;
     transform: translate(0, 10px);
-    transition: opacity 200ms ease-in, transform 200ms ease-in, visibility 200ms ease-in;
+    transition: opacity 50ms ease-in, transform 50ms ease-in, visibility 50ms ease-in;
   }
   #mega-menu-wrap-direct-signup-menu #mega-menu-direct-signup-menu[data-effect="fade_up"].mega-no-js li.mega-menu-item:hover > ul.mega-sub-menu, #mega-menu-wrap-direct-signup-menu #mega-menu-direct-signup-menu[data-effect="fade_up"].mega-no-js li.mega-menu-item:focus > ul.mega-sub-menu, #mega-menu-wrap-direct-signup-menu #mega-menu-direct-signup-menu[data-effect="fade_up"] li.mega-menu-item.mega-toggle-on > ul.mega-sub-menu, #mega-menu-wrap-direct-signup-menu #mega-menu-direct-signup-menu[data-effect="fade_up"] li.mega-menu-item.mega-menu-megamenu.mega-toggle-on ul.mega-sub-menu {
     opacity: 1;
@@ -1618,7 +1618,7 @@ body .reach-form-text h2 {
   }
   #mega-menu-wrap-direct-signup-menu #mega-menu-direct-signup-menu[data-effect="slide_up"] li.mega-menu-item.mega-menu-megamenu > ul.mega-sub-menu, #mega-menu-wrap-direct-signup-menu #mega-menu-direct-signup-menu[data-effect="slide_up"] li.mega-menu-item.mega-menu-flyout ul.mega-sub-menu {
     transform: translate(0, 10px);
-    transition: transform 200ms ease-in, visibility 200ms ease-in;
+    transition: transform 50ms ease-in, visibility 50ms ease-in;
   }
   #mega-menu-wrap-direct-signup-menu #mega-menu-direct-signup-menu[data-effect="slide_up"].mega-no-js li.mega-menu-item:hover > ul.mega-sub-menu, #mega-menu-wrap-direct-signup-menu #mega-menu-direct-signup-menu[data-effect="slide_up"].mega-no-js li.mega-menu-item:focus > ul.mega-sub-menu, #mega-menu-wrap-direct-signup-menu #mega-menu-direct-signup-menu[data-effect="slide_up"] li.mega-menu-item.mega-toggle-on > ul.mega-sub-menu, #mega-menu-wrap-direct-signup-menu #mega-menu-direct-signup-menu[data-effect="slide_up"] li.mega-menu-item.mega-menu-megamenu.mega-toggle-on ul.mega-sub-menu {
     transform: translate(0, 0);

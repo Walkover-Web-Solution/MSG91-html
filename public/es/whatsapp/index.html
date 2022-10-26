@@ -1778,6 +1778,14 @@ var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false
 "version":"3.5.5","is_static":false,"experimentalFeatures":{"e_import_export":true,"e_hidden_wordpress_widgets":true,"landing-pages":true,"elements-color-picker":true,"favorite-widgets":true,"admin-top-bar":true},"urls":{"assets":"https:\/\/msg91.com\/wp-content\/plugins\/elementor\/assets\/"},"settings":{"page":[],"editorPreferences":[]},"kit":{"global_image_lightbox":"yes","active_breakpoints":["viewport_mobile","viewport_tablet"],"lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":5492,"title":"Transactional%20SMS%20and%20Transactional%20Email%20Pricing%20%7C%20MSG91","excerpt":"","featuredImage":false}};
 </script>
 <script type='text/javascript' src='/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.5.5' id='elementor-frontend-js'></script>
+<script type='text/javascript'>
+  const el = document.querySelector("#main-header")
+  const observer = new IntersectionObserver( 
+    ([e]) => e.target.classList.toggle("stuck", e.intersectionRatio < 1),
+    { threshold: [1] }
+  );
+  observer.observe(el);
+</script>
 <script type='text/javascript' id='elementor-frontend-js-after'>
 window.scope_array = [];
 								window.backend = 0;
@@ -1863,18 +1871,6 @@ var n=d.createElement(s),e=d.getElementsByTagName(s)[0];
 n.id=i;n.src='//js.hs-analytics.net/analytics/'+(Math.ceil(new Date()/r)*r)+'/676631.js';
 e.parentNode.insertBefore(n, e);
 })(document,"script","hs-analytics",300000);
-</script>
-<!-- End of Async HubSpot Analytics Code --> <!-- -->
-
-
-
-  <!-- to change the country --> 
-
-<script>
-    window.onscroll = function () {
-        myFunction()
-    };
-    var header = document.getElementById("main-header");
 </script>
     
 <script type="text/javascript">
