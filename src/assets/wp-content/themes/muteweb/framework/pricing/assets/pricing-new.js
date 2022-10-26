@@ -169,9 +169,9 @@ function makeApiCall(data, type) {
         }
       },
       error: function (err) {
+        console.log('makeApiCall', obj);
         drawUiSendOtp(data, undefined);
         drawUi(data, undefined);
-
         throw new Error(err);
       },
     });
