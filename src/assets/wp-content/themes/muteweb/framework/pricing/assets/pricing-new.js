@@ -149,12 +149,12 @@ function makeApiCall(data, type) {
       data: data,
       success: function (result) {
         var obj = result.data;
+        console.log('makeApiCall', obj);
         if (typeof obj == "string") {
           obj = obj.replace(/[()]/g, "");
           obj = JSON.parse(obj);
         }
-        if (type == "text") {
-          console.log('makeApiCall', obj);
+        if (type == "text") {          
           if (type_re == "sendOtp_text") {
             drawUiSendOtp(data, obj);
           } else {
