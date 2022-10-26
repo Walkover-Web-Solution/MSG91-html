@@ -563,8 +563,8 @@ jQuery(document).ready(function ($) {
 
   // init apis
   getSmsPricing();
-  getEmailPricingNew();
-  getSendOtpPricing();
+  /*getEmailPricingNew();
+  getSendOtpPricing(); */
 
   setTimeout(function () {
     getEmailPricing();
