@@ -143,7 +143,8 @@ function makeApiCall(data, type) {
   if (type !== "EMAIL_NEW") {
     jQuery.ajax({
       type: "POST",
-      url: my_ajax_object.ajax_url + "?ver=" + t.getTime(),
+      url: "https://msg91.netlify.app/.netlify/functions/getSMSprice",
+      //url: my_ajax_object.ajax_url + "?ver=" + t.getTime(),
       dataType: "json",
       data: data,
       success: function (result) {
