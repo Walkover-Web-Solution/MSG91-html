@@ -3,9 +3,9 @@
 [headers.values]
   Access-Control-Allow-Origin = "*"
 
-# [[redirects]]
-#   from = ["/", "/hello/", "/segmento/", "/sms-campaign", "send-otp"]
-#   to = "/us/:*"
-#   status = 301
-#   force = true
-#   conditions = {Country = ["us"]}
+[[redirects]]
+  from = ["/", "/hello/", "/segmento/", "/sms-campaign", "send-otp"]
+  to = "/us/:splat"
+  status = 301
+  force = true
+  conditions = {Country = ["us"]}
