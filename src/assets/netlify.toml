@@ -4,8 +4,7 @@ for = "/*"
 Access-Control-Allow-Origin = "*"
 
 [[redirects]]
-  from = "/"
-  to = "/us/"
-  status = 301  
-  force = true
-  conditions = {Country = ["us"]}
+from = "/*"
+to = "/us/*"
+status = 301  
+conditions = {Country = ["us"]}
