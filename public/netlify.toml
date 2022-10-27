@@ -5,6 +5,6 @@ Access-Control-Allow-Origin = "*"
 
 [[redirects]]
 from = "/*"
-to = "/us/*"
+to = "/us/"
 status = 301  
 conditions = {Country = ["us"]}
