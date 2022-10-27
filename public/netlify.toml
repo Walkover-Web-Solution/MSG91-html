@@ -5,7 +5,7 @@
 
 [[redirects]]
   from = ["/", "/hello/", "/segmento/", "/sms-campaign", "send-otp"]
-  to = "/us/:splat"
+  to = "/us/:*"
   status = 301
   force = true
   conditions = {Country = ["us"]}
