@@ -4,7 +4,7 @@
   Access-Control-Allow-Origin = "*"
 
 [[redirects]]
-  from = "/*"
+  from = ["/", "/hello", "/segmento"]
   to = "/us/:splat"
   status = 301
   force = true  
