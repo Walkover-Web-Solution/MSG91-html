@@ -4,7 +4,19 @@
   Access-Control-Allow-Origin = "*"
 
 [[redirects]]
-  from = "/*"
+  from = "/"
   to = "/us"
+  status = 301  
+  conditions = {Country = ["us"]}
+
+[[redirects]]
+  from = "/about-us"
+  to = "/us/about-us"
+  status = 301  
+  conditions = {Country = ["us"]}
+
+[[redirects]]
+  from = "/hello"
+  to = "/us/hello"
   status = 301  
   conditions = {Country = ["us"]}
