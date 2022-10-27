@@ -4,22 +4,8 @@
   Access-Control-Allow-Origin = "*"
 
 [[redirects]]
-  from = ["/", "/hello", "/segmento"]
+  from = ["/", "/hello/", "/segmento/", "/sms-campaign", "send-otp"]
   to = "/us/:splat"
   status = 301
-  force = true  
+  force = true
   conditions = {Country = ["us"]}
-
-# [[redirects]]
-#   from = "/about-us"
-#   to = "/us/about-us/"
-#   status = 301
-#   force = true  
-#   conditions = {Country = ["us"]}
-
-# [[redirects]]
-#   from = "/hello"
-#   to = "/us/hello/"
-#   status = 301
-#   force = true  
-#   conditions = {Country = ["us"]}
