@@ -4,7 +4,7 @@ for = "/*"
 Access-Control-Allow-Origin = "*"
 
 [[redirects]]
-  from = "/*"
+  from = "/"
   to = "/us/"
   status = 301  
   force = true

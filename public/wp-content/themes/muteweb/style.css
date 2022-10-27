@@ -4849,10 +4849,7 @@ ul#mega-menu-primary-menu li a:hover {
         padding-left: 0;
         display: initial;
     }
-    /*.hidecustommenu{display:none !important;}*/
-    header.main-header.sticky {
-        top: 86px !important;
-    }
+    
     .country-top {
         top: 0;
     }
