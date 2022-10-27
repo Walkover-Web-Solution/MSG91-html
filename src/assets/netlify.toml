@@ -1,10 +1,10 @@
 [[headers]]
-for = "/*"
+  for = "/*"
 [headers.values]
-Access-Control-Allow-Origin = "*"
+  Access-Control-Allow-Origin = "*"
 
 [[redirects]]
-from = "/*"
-to = "/us"
-status = 301  
-conditions = {Country = ["us"]}
+  from = "/*"
+  to = "/us"
+  status = 301  
+  conditions = {Country = ["us"]}
