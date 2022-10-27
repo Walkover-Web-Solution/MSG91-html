@@ -3,9 +3,88 @@
 [headers.values]
   Access-Control-Allow-Origin = "*"
 
+# united state
 [[redirects]]
-  from = ["/", "/hello/", "/segmento/", "/sms-campaign", "send-otp"]
-  to = "/us/:splat"
-  status = 301
-  force = true
-  conditions = {Country = ["us"]}
+from = "/"
+to = "/us/"
+status = 301
+force = true
+conditions = {Country = ["us"]}
+[[redirects]]
+from = "/transactional-sms"
+to = "/us/transactional-sms"
+status = 301
+force = true
+conditions = {Country = ["us"]}
+[[redirects]]
+from = "/shorturl"
+to = "/us/shorturl"
+status = 301
+force = true
+conditions = {Country = ["us"]}
+[[redirects]]
+from = "/transactional-email"
+to = "/us/transactional-email"
+status = 301
+force = true
+conditions = {Country = ["us"]}
+[[redirects]]
+from = "/rich-communication-services"
+to = "/us/rich-communication-services"
+status = 301
+force = true
+conditions = {Country = ["us"]}
+[[redirects]]
+from = "/voice-call-api"
+to = "/us/voice-call-api"
+status = 301
+force = true
+conditions = {Country = ["us"]}
+[[redirects]]
+from = "/whatsapp"
+to = "/us/whatsapp"
+status = 301
+force = true
+conditions = {Country = ["us"]}
+[[redirects]]
+from = "/one-api"
+to = "/us/one-api"
+status = 301
+force = true
+conditions = {Country = ["us"]}
+[[redirects]]
+from = "/segmento"
+to = "/us/segmento"
+status = 301
+force = true
+conditions = {Country = ["us"]}
+[[redirects]]
+from = "/sms-campaign"
+to = "/us/sms-campaign"
+status = 301
+force = true
+conditions = {Country = ["us"]}
+[[redirects]]
+from = "/hello"
+to = "/us/hello"
+status = 301
+force = true
+conditions = {Country = ["us"]}
+[[redirects]]
+from = "/send-otp"
+to = "/us/send-otp"
+status = 301
+force = true
+conditions = {Country = ["us"]}
+[[redirects]]
+from = "/virtual-number"
+to = "/us/virtual-number"
+status = 301
+force = true
+conditions = {Country = ["us"]}
+[[redirects]]
+from = "/internet-messaging"
+to = "/us/internet-messaging"
+status = 301
+force = true
+conditions = {Country = ["us"]}
