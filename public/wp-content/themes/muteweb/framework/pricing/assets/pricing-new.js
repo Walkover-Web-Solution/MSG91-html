@@ -100,7 +100,8 @@ function drawUiSendOtp(postData, obj) {
 }
 
 // get price from apis
-function getSmsPricing() {
+function getSmsPricing(i) {
+  console.log('getSmsPricing', i);
   var data = {};
   data["wallet"] = 1;
   data["server_action"] = 511;
@@ -133,7 +134,7 @@ function getSendOtpPricing() {
   }
 }
 
-function makeApiCall(data, type) {
+function makeApiCall(data, type) {  
   var type_re = type;
   var t = new Date();
   if (type == "sendOtp_text") {
@@ -346,7 +347,7 @@ function getVoicePricing() {
   data["apiUrl"] = "https://control.msg91.com/action_layer.php";
   data["action"] = "fetchPricing";
   if (data) {
-    makeApiCall(data, "voice");
+    //makeApiCall(data, "voice");
   }
 }
 
@@ -401,7 +402,7 @@ jQuery(document).ready(function ($) {
       $("#promo").css({ display: "none" });
     }
     setTimeout(function () {
-      getSmsPricing();
+      getSmsPricing(1);
     }, 500);
   });
 
@@ -441,7 +442,7 @@ jQuery(document).ready(function ($) {
       jQuery(".number-sms-box .pricing-box-wrapper").css("display", "flex");
       jQuery(".number-sms-box .price-contact-box").css("display", "none");
       setTimeout(function () {
-        getSmsPricing();
+        getSmsPricing(2);
       }, 100);
     }
   });
@@ -473,7 +474,7 @@ jQuery(document).ready(function ($) {
       jQuery(".number-mails-box .pricing-box-wrapper").css("display", "flex");
       jQuery(".number-mails-box .price-contact-box").css("display", "none");
       setTimeout(function () {
-        getSmsPricing();
+        getSmsPricing(3);
       }, 100);
     }
   });
@@ -489,7 +490,7 @@ jQuery(document).ready(function ($) {
       jQuery(".outbound-voice-box .pricing-box-wrapper").css("display", "flex");
       jQuery(".outbound-voice-box .price-contact-box").css("display", "none");
       setTimeout(function () {
-        getSmsPricing();
+        getSmsPricing(4);
       }, 100);
     }
   });
@@ -503,7 +504,7 @@ jQuery(document).ready(function ($) {
     $("#type").val($(this).attr("value")).change();
     $(".typetext").html($(this).html());
     setTimeout(function () {
-      getSmsPricing();
+      getSmsPricing(5);
     }, 100);
   });
 
@@ -512,7 +513,7 @@ jQuery(document).ready(function ($) {
     var v = $(this).attr("data-currency");
     $("#currency").val(v).change();
     setTimeout(function () {
-      getSmsPricing();
+      getSmsPricing(6);
       $(".currencytext").html(v);
     }, 100);
   });
@@ -562,17 +563,17 @@ jQuery(document).ready(function ($) {
   });
 
   // init apis
-  getSmsPricing();
-  getEmailPricingNew();
-  getSendOtpPricing();
+  //getSmsPricing();
+  //getEmailPricingNew();
+  //getSendOtpPricing();
 
-  setTimeout(function () {
+  /* setTimeout(function () {
     getEmailPricing();
   }, 500);
 
   setTimeout(function () {
     getVoicePricing();
-  }, 1000);
+  }, 1000); */
 
   // handle select2 change
   jQuery("#sendOtp_currencys").on("change", function () {
@@ -587,7 +588,7 @@ jQuery(document).ready(function ($) {
       $("#promo").css({ display: "none" });
     }
     setTimeout(function () {
-      getSmsPricing();
+      getSmsPricing(7);
     }, 500);
   });
 
