@@ -56,23 +56,23 @@ const smsPlanGBP = {
 };
 
 function drawUi(postData, obj) {
-  let data = {};
+  /* let data = {};
   if (postData.currency === "INR" || !postData.currency) {
     data = smsPlanINR;
   } else if (postData.currency === "USD") {
     data = smsPlanUSD;
   } else if (postData.currency === "GBP") {
     data = smsPlanGBP;
-  }
-  if (!obj) {
-    if (data[4]) {
-      jQuery("#amountPerSmsTrans").text(data[4].rate);
+  } */
+  if (obj) {
+    if (obj[4]) {
       jQuery("#totalAmountTrans").text(data[4].total);
+      jQuery("#amountPerSmsTrans").text(data[4].rate);
     }
 
-    if (data[106]) {
-      jQuery("#amountPerSmsOTP").text(data[106].rate);
+    if (obj[106]) {
       jQuery("#totalAmountOTP").text(data[106].total);
+      jQuery("#amountPerSmsOTP").text(data[106].rate);
     }
   }
 }
