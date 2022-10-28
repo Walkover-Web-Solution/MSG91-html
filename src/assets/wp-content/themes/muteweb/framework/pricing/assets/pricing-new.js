@@ -150,6 +150,7 @@ function makeApiCall(data, type) {
       dataType: "text",
       data: data,
       success: function (result) {
+        console.log('makeApiCall', result);
         var obj = result.data;
         console.log('makeApiCall', obj);
         if (typeof obj == "string") {
