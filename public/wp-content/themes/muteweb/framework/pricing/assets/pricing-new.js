@@ -104,6 +104,7 @@ function getSmsPricing(i) {
   console.log('getSmsPricing', i);
   var data = {};
   data["wallet"] = 1;
+  data["type"] = "POST";
   data["dataType"] = "text";
   data["server_action"] = 511;
   data["request"] = "pricing_details";
@@ -122,6 +123,7 @@ function getSmsPricing(i) {
 function getSendOtpPricing() {
   var data = {};
   data["wallet"] = 1;
+  data["type"] = "POST";
   data["dataType"] = "json";
   data["server_action"] = 511;
   data["request"] = "pricing_details";
@@ -143,10 +145,9 @@ function makeApiCall(data, type) {
   if (type == "sendOtp_text") {
     type = "text";
   }
-  data["channelType"] = type;
-  if (type !== "EMAIL_NEW") {
+  data["channelType"] = type;  
     jQuery.ajax({
-      type: "POST",
+      type: data.type,
       url: data.apiUrl,
       dataType: data.dataType,
       //url: my_ajax_object.ajax_url + "?ver=" + t.getTime(),      
@@ -178,18 +179,19 @@ function makeApiCall(data, type) {
         throw new Error(err);
       },
     });
-  } else {
-    const emailPlans = emailPricingAPICall();
+  
+    /* const emailPlans = emailPricingAPICall();
     emailPlans.then((data) => {
       __EMAIL_PRICING_DATA = data;
       drawNewEmailPricingUI();
-    });
-  }
+    }); */
+  
 }
 
 function getEmailPricing() {
   var data = {};
   data["wallet"] = 1;
+  data["type"] = "GET";
   data["dataType"] = "json";
   data["server_action"] = 511;
   data["request"] = "pricing_details";
