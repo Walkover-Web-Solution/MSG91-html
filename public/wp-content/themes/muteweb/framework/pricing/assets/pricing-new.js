@@ -147,7 +147,7 @@ function makeApiCall(data, type) {
       type: "POST",
       url: data.apiUrl,
       //url: my_ajax_object.ajax_url + "?ver=" + t.getTime(),
-      dataType: "json",
+      dataType: "text",
       data: data,
       success: function (result) {
         var obj = result.data;
