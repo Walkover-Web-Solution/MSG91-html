@@ -149,7 +149,7 @@ function makeApiCall(data, type) {
       //url: my_ajax_object.ajax_url + "?ver=" + t.getTime(),      
       data: data,
       success: function (result) {
-        console.log('makeApiCall:response data', data); 
+        console.log('makeApiCall:response data', result); 
         var obj = result.data;        
         if (typeof obj == "string") {
           obj = obj.replace(/[()]/g, "");
