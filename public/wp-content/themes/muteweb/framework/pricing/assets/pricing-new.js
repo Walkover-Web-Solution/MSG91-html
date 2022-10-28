@@ -135,7 +135,7 @@ function getSendOtpPricing() {
 }
 
 function makeApiCall(data, type) {
-  console.log('makeApiCall:data', data); 
+  console.log('makeApiCall:request data', data); 
   var type_re = type;
   var t = new Date();
   if (type == "sendOtp_text") {
@@ -149,6 +149,7 @@ function makeApiCall(data, type) {
       //url: my_ajax_object.ajax_url + "?ver=" + t.getTime(),      
       data: data,
       success: function (result) {
+        console.log('makeApiCall:response data', data); 
         var obj = result.data;        
         if (typeof obj == "string") {
           obj = obj.replace(/[()]/g, "");
@@ -197,7 +198,7 @@ function getEmailPricing() {
   data["apiUrl"] = "https://subscription.msg91.com/api/plans?ms_id=1";
   data["action"] = "fetchPricing";
   if (data) {
-		makeApiCall(data, 'email'); old way changed on 01Feb2022
+		makeApiCall(data, 'email');
 	}
 }
 
