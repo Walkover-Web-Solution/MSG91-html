@@ -154,11 +154,9 @@ function makeApiCall(data, type) {
       data: data,
       success: function (result) {        
         var obj;
-        if(!("data" in result)){
-          if (typeof result == "string") {
-            obj = result.replace(/[()]/g, "");
-            obj = JSON.parse(obj);
-          }
+        if (typeof result == "string") {
+          obj = result.replace(/[()]/g, "");
+          obj = JSON.parse(obj);
         } else {
           obj = result.data;
         }
