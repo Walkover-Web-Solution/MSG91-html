@@ -167,7 +167,9 @@ function makeApiCall(data, type) {
           }
         }
         if (type == "email") {
-          drawUiForEmail(data, obj);
+          //drawUiForEmail(data, obj);
+          __EMAIL_PRICING_DATA = obj;
+          drawNewEmailPricingUI();
         }
         if (type == "voice") {
           drawUiForVoice(data, obj);
