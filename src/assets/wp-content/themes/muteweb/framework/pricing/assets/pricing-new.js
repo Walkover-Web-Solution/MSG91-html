@@ -104,6 +104,7 @@ function getSmsPricing(i) {
   console.log('getSmsPricing', i);
   var data = {};
   data["wallet"] = 1;
+  data["dataType"] = "text";
   data["server_action"] = 511;
   data["request"] = "pricing_details";
   data["country"] = jQuery("#sms_country").val();
@@ -121,6 +122,7 @@ function getSmsPricing(i) {
 function getSendOtpPricing() {
   var data = {};
   data["wallet"] = 1;
+  data["dataType"] = "json";
   data["server_action"] = 511;
   data["request"] = "pricing_details";
   data["country"] = jQuery("#sendotp_country").val();
@@ -146,6 +148,7 @@ function makeApiCall(data, type) {
     jQuery.ajax({
       type: "POST",
       url: data.apiUrl,
+      dataType: data.dataType,
       //url: my_ajax_object.ajax_url + "?ver=" + t.getTime(),      
       data: data,
       success: function (result) {
@@ -187,6 +190,7 @@ function makeApiCall(data, type) {
 function getEmailPricing() {
   var data = {};
   data["wallet"] = 1;
+  data["dataType"] = "json";
   data["server_action"] = 511;
   data["request"] = "pricing_details";
   // data['country']=jQuery('#sms_country').val();
@@ -336,6 +340,7 @@ function drawUiForEmail(data, obj) {
 
 function getVoicePricing() {
   var data = {};
+  data["dataType"] = "json";
   data["wallet"] = 1;
   data["server_action"] = 511;
   data["request"] = "pricing_details";
