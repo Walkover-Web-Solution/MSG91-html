@@ -66,13 +66,13 @@ function drawUi(postData, obj) {
   } */
   if (obj) {
     if (obj[4]) {
-      jQuery("#totalAmountTrans").text(data[4].total);
-      jQuery("#amountPerSmsTrans").text(data[4].rate);
+      jQuery("#totalAmountTrans").text(obj[4].total);
+      jQuery("#amountPerSmsTrans").text(obj[4].rate);
     }
 
     if (obj[106]) {
-      jQuery("#totalAmountOTP").text(data[106].total);
-      jQuery("#amountPerSmsOTP").text(data[106].rate);
+      jQuery("#totalAmountOTP").text(obj[106].total);
+      jQuery("#amountPerSmsOTP").text(obj[106].rate);
     }
   }
 }
