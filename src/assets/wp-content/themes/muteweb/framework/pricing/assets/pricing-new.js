@@ -146,8 +146,7 @@ function makeApiCall(data, type) {
     jQuery.ajax({
       type: "POST",
       url: data.apiUrl,
-      //url: my_ajax_object.ajax_url + "?ver=" + t.getTime(),
-      dataType: "text",
+      //url: my_ajax_object.ajax_url + "?ver=" + t.getTime(),      
       data: data,
       success: function (result) {
         console.log('makeApiCall', result);
