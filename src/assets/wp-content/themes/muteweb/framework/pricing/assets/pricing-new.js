@@ -149,9 +149,7 @@ function makeApiCall(data, type) {
       //url: my_ajax_object.ajax_url + "?ver=" + t.getTime(),      
       data: data,
       success: function (result) {
-        console.log('makeApiCall', result);
-        var obj = result.data;
-        console.log('makeApiCall', obj);
+        var obj = result.data;        
         if (typeof obj == "string") {
           obj = obj.replace(/[()]/g, "");
           obj = JSON.parse(obj);
@@ -198,9 +196,9 @@ function getEmailPricing() {
   //   data["apiUrl"] = "https://subscriptions.elitevysya.com/api/plans?ms_id=1";
   data["apiUrl"] = "https://subscription.msg91.com/api/plans?ms_id=1";
   data["action"] = "fetchPricing";
-  /*if (data) {
+  if (data) {
 		makeApiCall(data, 'email'); old way changed on 01Feb2022
-	}*/
+	}
 }
 
 async function emailPricingAPICall() {
