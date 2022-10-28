@@ -134,7 +134,8 @@ function getSendOtpPricing() {
   }
 }
 
-function makeApiCall(data, type) {  
+function makeApiCall(data, type) {
+  console.log('makeApiCall:data', data); 
   var type_re = type;
   var t = new Date();
   if (type == "sendOtp_text") {
