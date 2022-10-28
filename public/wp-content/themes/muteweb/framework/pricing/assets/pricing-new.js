@@ -115,7 +115,7 @@ function getSendOtpPricing() {
   data["noOfSMS"] = jQuery("#sendOtp_noOfSMS").val();
   data["currency"] = jQuery("#sendOtp_currency").val();
   data["originCountry"] = ___ORIGIN_COUNTRY;
-  data["apiUrl"] = "https://control.msg91.com/action_layer.php";
+  data["apiUrl"] = "https://msg91.netlify.app/.netlify/functions/getSMSprice?country="+data.country+"&currency="+data.currency+"&noOfSMS="+data.noOfSMS;
   data["action"] = "fetchPricing";
   if (data) {
     makeApiCall(data, "sendOtp_text");
@@ -490,7 +490,7 @@ jQuery(document).ready(function ($) {
     }
   });
   // on dropmenu
-  $(document).on("click", ".dropdown.pricing-drop-menu", function () {
+  $(document).on("click", ".dropdown", function () {
     $(this).toggleClass("open");
   });
 
