@@ -55,15 +55,7 @@ const smsPlanGBP = {
   },
 };
 
-function drawUi(postData, obj) {
-  /* let data = {};
-  if (postData.currency === "INR" || !postData.currency) {
-    data = smsPlanINR;
-  } else if (postData.currency === "USD") {
-    data = smsPlanUSD;
-  } else if (postData.currency === "GBP") {
-    data = smsPlanGBP;
-  } */
+function drawUi(postData, obj) {  
   if (obj) {
     if (obj[4]) {
       jQuery("#totalAmountTrans").text(obj[4].total);
@@ -77,24 +69,16 @@ function drawUi(postData, obj) {
   }
 }
 
-function drawUiSendOtp(postData, obj) {
-  let data = {};
-  if (postData.currency === "INR" || !postData.currency) {
-    data = smsPlanINR;
-  } else if (postData.currency === "USD") {
-    data = smsPlanUSD;
-  } else if (postData.currency === "GBP") {
-    data = smsPlanGBP;
-  }
-  if (!obj) {
-    if (data[4]) {
-      jQuery("#sendOtp_amountPerSmsTrans").text(data[4].rate);
-      jQuery("#sendOtp_totalAmountTrans").text(data[4].total);
+function drawUiSendOtp(postData, obj) {  
+  if (obj) {
+    if (obj[4]) {
+      jQuery("#sendOtp_amountPerSmsTrans").text(obj[4].rate);
+      jQuery("#sendOtp_totalAmountTrans").text(obj[4].total);
     }
 
     if (data[106]) {
-      jQuery("#sendOtp_amountPerSmsOTP").text(data[106].rate);
-      jQuery("#sendOtp_totalAmountOTP").text(data[106].total);
+      jQuery("#sendOtp_amountPerSmsOTP").text(obj[106].rate);
+      jQuery("#sendOtp_totalAmountOTP").text(obj[106].total);
     }
   }
 }
