@@ -152,14 +152,18 @@ function makeApiCall(data, type) {
       dataType: data.dataType,
       //url: my_ajax_object.ajax_url + "?ver=" + t.getTime(),      
       data: data,
-      success: function (result) {
-        console.log('makeApiCall:response data', result); 
-        var obj = result.data;        
-        if (typeof obj == "string") {
-          obj = obj.replace(/[()]/g, "");
-          obj = JSON.parse(obj);
+      success: function (result) {        
+        var obj;
+        if(!("data" in result)){
+          if (typeof result == "string") {
+            obj = result.replace(/[()]/g, "");
+            obj = JSON.parse(obj);
+          }
+        } else {
+          obj = result.data;
         }
-        if (type == "text") {          
+        console.log('makeApiCall:response data', obj); 
+        if (type == "text") {
           if (type_re == "sendOtp_text") {
             drawUiSendOtp(data, obj);
           } else {
