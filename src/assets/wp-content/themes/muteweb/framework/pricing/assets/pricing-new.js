@@ -330,9 +330,7 @@ function drawUiForWhatsApp(conf, plans){
       o.currency.short_name == 'INR' && o.plan_type.name === 'Monthly'
     );
     let freeSession = plan.plan_services[0].service_credit.free_credits;
-    freeSession = freeSession/1000;
-
-      console.log('drawUiForWhatsApp amount', amount);
+    freeSession = freeSession/1000;      
     html+=`<div class="pricing-sms-wrap col-md-4 pricingboxfirst">
       <div class="mainblueemail">
         <h3 class="bluetopcircle">${plan.name}</h3>
