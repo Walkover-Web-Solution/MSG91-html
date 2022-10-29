@@ -144,7 +144,7 @@ function makeApiCall(data, type) {
         } else {
           obj = result.data;
         }
-        console.log('makeApiCall:response data', obj); 
+        
         if (type == "text") {
           if (type_re == "sendOtp_text") {
             drawUiSendOtp(data, obj);
@@ -159,6 +159,10 @@ function makeApiCall(data, type) {
         }
         if (type == "voice") {
           drawUiForVoice(data, obj);
+        }
+        
+        if (type == "whatsapp") {
+          drawUiForWhatsApp(data, obj);
         }
       },
       error: function (err) {        
@@ -187,12 +191,28 @@ function getEmailPricing() {
   data["country"] = "all";
   data["noOfSMS"] = jQuery("#noOfEmail").val();
   data["currency"] = jQuery("#currency_email").val();
-  data["originCountry"] = "India";
-  //   data["apiUrl"] = "https://subscriptions.elitevysya.com/api/plans?ms_id=1";
+  data["originCountry"] = "India";  
   data["apiUrl"] = "https://subscription.msg91.com/api/plans?ms_id=1";
   data["action"] = "fetchPricing";
   if (data) {
 		makeApiCall(data, 'email');
+	}
+}
+
+function getWhatsAppPricing() {
+  var data = {};
+  data["wallet"] = 1;
+  data["type"] = "GET";
+  data["dataType"] = "json";  
+  data["request"] = "pricing_details";  
+  data["country"] = "all";
+  data["noOfSMS"] = jQuery("#noOfEmail").val();
+  data["currency"] = jQuery("#currency_email").val();
+  data["originCountry"] = "India";  
+  data["apiUrl"] = "https://subscription.msg91.com/api/plans?ms_id=5";
+  data["action"] = "fetchPricing";
+  if (data) {
+		makeApiCall(data, 'whatsapp');
 	}
 }
 
@@ -302,6 +322,44 @@ function drawNewEmailPricingUI() {
   }
 }
 
+function drawUiForWhatsApp(conf, plans){
+  console.log('drawUiForWhatsApp', conf, plans);
+  var html = '';
+  plans.forEach(function(plan, index) {
+    let amount = plan.plan_amounts.find((o) =>
+      o.currency.short_name == 'INR' && o.plan_type.name === 'Monthly'
+    );
+    let freeSession = plan.plan_services[0].service_credit.free_credits;
+    freeSession = freeSession/1000;
+
+      console.log('drawUiForWhatsApp amount', amount);
+    html+=`<div class="pricing-sms-wrap col-md-4 pricingboxfirst">
+      <div class="mainblueemail">
+        <h3 class="bluetopcircle">${plan.name}</h3>
+      </div>
+      <h4 class="monthsystem">        
+        ₹${amount.plan_amount}/${amount.plan_type.name}
+      </h4>
+      <p class="amountnewemail">${freeSession}K Sessions</p>`
+    if(freeSession >= 10 ){
+      html+=`<p class="margin_zero"> + </p>
+        <a href="https://developers.facebook.com/docs/whatsapp/pricing"
+          class="whatsapp_price"
+          target="_blank">WhatsApp
+          Price</a><br>`
+    }  
+    html+=`<a class="sms-free-bt getfreenewbuton"
+        href="/contact-us/"
+        target="_blank">Talk to
+        Experts</a>
+      <!--<div class="mainaddon">
+        <h5 class="addsonemail">*Extra</h5>
+        <h6 style="color: #5d6164;" class="peremailprice">₹0.10</h6>
+      </div>-->
+    </div>`;
+  });
+  jQuery("#whats-app-plans").html(html);
+}
 // jQuery(document).on("change","#emailQueryForm select",function() {
 // 	drawNewEmailPricingUI();
 // });
