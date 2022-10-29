@@ -2191,8 +2191,7 @@ div#gdpr-cookie-consent-bar{
 .contact-tab-box .elementor-tab-title{
     position:relative
 }
-.contact-tab-box{
-    border:2px solid #eaeaea;
+.contact-tab-box{    
     margin:0;
     padding:0
 }
