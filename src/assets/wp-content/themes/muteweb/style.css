@@ -942,6 +942,12 @@ ul.sub-menu{
 center bottom,linear-gradient(to bottom,transparent,transparent 44%,#000 35%,#000) 
 no-repeat center bottom
 }
+
+.footer-copyright .copyright,
+.footer-copyright .powered-by,
+.footer-copyright .powered-by a{
+    color: #666;
+}
 @media (max-width:575px){
     .country-top{
         padding:7px 0
@@ -1086,9 +1092,7 @@ footer.footer-main ul{
 .font-14,.powered-by a{
     font-size:14px
 }
-.powered-by strong{
-    color:#fff
-}
+
 .elementor-element-0dc1832 .elementor-widget{
     display:contents
 }
@@ -2607,7 +2611,7 @@ input#noOfSMS{
     }
     .footer-copyright li{
         padding:0 5px
-    }
+    }    
     header.main-header{
         display:flex;
         flex-wrap:wrap;
