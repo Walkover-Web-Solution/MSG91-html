@@ -84,20 +84,22 @@ function drawUiSendOtp(postData, obj) {
 }
 
 // get price from apis
-function getSmsPricing(i) {
-  console.log('getSmsPricing', i);
+function getSmsPricing() {  
   var data = {};
-  data["wallet"] = 1;
+  data['param'] = {};
+
   data["type"] = "POST";
   data["dataType"] = "text";
-  data["server_action"] = 511;
-  data["request"] = "pricing_details";
-  data["country"] = jQuery("#sms_country").val();
-  data["noOfSMS"] = jQuery("#noOfSMS").val();
-  data["currency"] = jQuery("#currency").val();
-  data["originCountry"] = ___ORIGIN_COUNTRY;
   data["apiUrl"] = "https://msg91.netlify.app/.netlify/functions/getSMSprice?country="+data.country+"&currency="+data.currency+"&noOfSMS="+data.noOfSMS;
-  data["action"] = "fetchPricing";
+
+  data['param']["wallet"] = 1;
+  data['param']["server_action"] = 511;
+  data['param']["request"] = "pricing_details";
+  data['param']["country"] = jQuery("#sms_country").val();
+  data['param']["noOfSMS"] = jQuery("#noOfSMS").val();
+  data['param']["currency"] = jQuery("#currency").val();
+  data['param']["originCountry"] = ___ORIGIN_COUNTRY;
+  data['param']["action"] = "fetchPricing";
   if (data) {
     makeApiCall(data, "text");
   }
@@ -106,17 +108,20 @@ function getSmsPricing(i) {
 // get price from apis
 function getSendOtpPricing() {
   var data = {};
-  data["wallet"] = 1;
+  data['param'] = {};
+
   data["type"] = "POST";
   data["dataType"] = "json";
-  data["server_action"] = 511;
-  data["request"] = "pricing_details";
-  data["country"] = jQuery("#sendotp_country").val();
-  data["noOfSMS"] = jQuery("#sendOtp_noOfSMS").val();
-  data["currency"] = jQuery("#sendOtp_currency").val();
-  data["originCountry"] = ___ORIGIN_COUNTRY;
   data["apiUrl"] = "https://msg91.netlify.app/.netlify/functions/getSMSprice?country="+data.country+"&currency="+data.currency+"&noOfSMS="+data.noOfSMS;
-  data["action"] = "fetchPricing";
+
+  data['param']["wallet"] = 1;
+  data['param']["server_action"] = 511;
+  data['param']["request"] = "pricing_details";
+  data['param']["country"] = jQuery("#sendotp_country").val();
+  data['param']["noOfSMS"] = jQuery("#sendOtp_noOfSMS").val();
+  data['param']["currency"] = jQuery("#sendOtp_currency").val();
+  data['param']["originCountry"] = ___ORIGIN_COUNTRY;
+  data['param']["action"] = "fetchPricing";
   if (data) {
     makeApiCall(data, "sendOtp_text");
   }
@@ -127,14 +132,12 @@ function makeApiCall(data, type) {
   var t = new Date();
   if (type == "sendOtp_text") {
     type = "text";
-  }
-  data["channelType"] = type;  
+  }  
     jQuery.ajax({
       type: data.type,
       url: data.apiUrl,
-      dataType: data.dataType,
-      //url: my_ajax_object.ajax_url + "?ver=" + t.getTime(),      
-      data: data,
+      dataType: data.dataType,      
+      data: data.param,
       success: function (result) {        
         var obj;
         if (typeof result == "string") {
@@ -153,7 +156,7 @@ function makeApiCall(data, type) {
         }
         if (type == "email") {
           //drawUiForEmail(data, obj);
-          __EMAIL_PRICING_DATA = obj;
+          __EMAIL_PRICING_DATA = obj;          
           drawNewEmailPricingUI();
         }
         if (type == "voice") {
@@ -181,18 +184,20 @@ function makeApiCall(data, type) {
 
 function getEmailPricing() {
   var data = {};
-  data["wallet"] = 1;
+  data['param'] = {};
+
   data["type"] = "GET";
   data["dataType"] = "json";
-  data["server_action"] = 511;
-  data["request"] = "pricing_details";
-  // data['country']=jQuery('#sms_country').val();
-  data["country"] = "all";
-  data["noOfSMS"] = jQuery("#noOfEmail").val();
-  data["currency"] = jQuery("#currency_email").val();
-  data["originCountry"] = "India";  
   data["apiUrl"] = "https://subscription.msg91.com/api/plans?ms_id=1";
-  data["action"] = "fetchPricing";
+  
+  data['param']["wallet"] = 1;
+  data['param']["server_action"] = 511;
+  data['param']["request"] = "pricing_details";  
+  data['param']["country"] = "all";
+  data['param']["noOfSMS"] = jQuery("#noOfEmail").val();
+  data['param']["currency"] = jQuery("#currency_email").val();
+  data['param']["originCountry"] = "India";  
+  data['param']["action"] = "fetchPricing";
   if (data) {
 		makeApiCall(data, 'email');
 	}
@@ -200,33 +205,35 @@ function getEmailPricing() {
 
 function getWhatsAppPricing() {
   var data = {};
-  data["wallet"] = 1;
+  data['param'] = {};
+  
   data["type"] = "GET";
   data["dataType"] = "json";  
-  data["request"] = "pricing_details";  
-  data["country"] = "all";
-  data["noOfSMS"] = jQuery("#noOfEmail").val();
-  //data["currency"] = jQuery("#currency_email").val();
-  data["originCountry"] = "India";  
   data["apiUrl"] = "https://subscription.msg91.com/api/plans?ms_id=5";
-  data["action"] = "fetchPricing";
+
+  data['param']["wallet"] = 1;
+  data['param']["request"] = "pricing_details";  
+  data['param']["country"] = "all";
+  data['param']["noOfSMS"] = jQuery("#noOfEmail").val();  
+  data['param']["originCountry"] = "India";  
+  data['param']["action"] = "fetchPricing";
   if (data) {
 		makeApiCall(data, 'whatsapp');
 	}
 }
 
-async function emailPricingAPICall() {
+/* async function emailPricingAPICall() {
   const results = await fetch(
     "https://subscription.msg91.com/api/plans?ms_id=1"
   );
   const res = await results.json();
   return res.data;
-}
+} */
 
-jQuery(".maindropdwnprice").on("change", function () {
+/* jQuery(".maindropdwnprice").on("change", function () {
   let selectedCurrency = jQuery("#currency_email").val();
   drawNewEmailPricingUI();
-});
+}); */
 
 function drawNewEmailPricingUI() {
   let selectedCurrency = jQuery("#currency_email").val();
@@ -390,14 +397,14 @@ function drawUiForWhatsApp(conf, plans){
 // 	drawNewEmailPricingUI();
 // });
 
-function getEmailPricingNew() {
+/* function getEmailPricingNew() {
   var data = {};
   data["apiUrl"] = "https://subscription.msg91.com/api/plans?ms_id=1";
   data["action"] = "fetchEmailPricing";
   setTimeout(function () {
     makeApiCall(data, "EMAIL_NEW");
   }, 1500);
-}
+} */
 
 function drawUiForEmail(data, obj) {
   if (obj) {
@@ -410,17 +417,19 @@ function drawUiForEmail(data, obj) {
 
 function getVoicePricing() {
   var data = {};
+  data['param'] = {};
+  
   data["dataType"] = "json";
-  data["wallet"] = 1;
-  data["server_action"] = 511;
-  data["request"] = "pricing_details";
-  data["country"] = jQuery("#country_voice").val();
-  data["noOfSMS"] = jQuery("#noOfVoice").val();
-  data["currency"] = jQuery("#currency_voice").val();
-  // data['originCountry']= ___ORIGIN_COUNTRY;
-  data["originCountry"] = "India";
   data["apiUrl"] = "https://control.msg91.com/action_layer.php";
-  data["action"] = "fetchPricing";
+  
+  dadata['param']["wallet"] = 1;
+  data['param']["server_action"] = 511;
+  data['param']["request"] = "pricing_details";
+  data['param']["country"] = jQuery("#country_voice").val();
+  data['param']["noOfSMS"] = jQuery("#noOfVoice").val();
+  data['param']["currency"] = jQuery("#currency_voice").val();  
+  data['param']["originCountry"] = "India";
+  data['param']["action"] = "fetchPricing";
   if (data) {
     //makeApiCall(data, "voice");
   }
@@ -612,13 +621,13 @@ jQuery(document).ready(function ($) {
     }, 100);
   });
 
-  jQuery("#pricingSlabEmail").change(function () {
+  /* jQuery("#pricingSlabEmail").change(function () {
     let val = jQuery(this).val();
     jQuery("#noOfEmail").val(_ARR_EMAIL[val - 1]);
     setTimeout(function () {
       getEmailPricing();
     }, 100);
-  });
+  }); */
 
   // get voice rates
   // country_voice, noOfVoice, currency_voice, currency_voice_drop, amountPerVoice,
@@ -694,12 +703,13 @@ jQuery(document).ready(function ($) {
   });
 
   //on pricing->email tab change
-  jQuery(document).on("click", ".commonbuttonprice", function (e) {
+  /* jQuery(document).on("click", ".commonbuttonprice", function (e) {
+    console.log('clicked on commonbuttonprice');
     jQuery(".commonbuttonprice").removeClass("darkbackcolor");
     jQuery(".commonbuttonprice").removeClass("greybackcolor");
     jQuery(e.target).addClass("darkbackcolor");
     jQuery("#duration").val(jQuery(this).attr("rel"));
     getEmailPricingNew();
     // emailPricingAPICall();
-  });
+  }); */
 });
