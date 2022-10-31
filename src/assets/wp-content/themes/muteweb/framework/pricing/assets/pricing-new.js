@@ -88,10 +88,6 @@ function getSmsPricing() {
   var data = {};
   data['param'] = {};
 
-  data["type"] = "POST";
-  data["dataType"] = "text";
-  data["apiUrl"] = "https://msg91.netlify.app/.netlify/functions/getSMSprice?country="+data.country+"&currency="+data.currency+"&noOfSMS="+data.noOfSMS;
-
   data['param']["wallet"] = 1;
   data['param']["server_action"] = 511;
   data['param']["request"] = "pricing_details";
@@ -100,6 +96,11 @@ function getSmsPricing() {
   data['param']["currency"] = jQuery("#currency").val();
   data['param']["originCountry"] = ___ORIGIN_COUNTRY;
   data['param']["action"] = "fetchPricing";
+
+  data["type"] = "POST";
+  data["dataType"] = "text";
+  data["apiUrl"] = "https://msg91.netlify.app/.netlify/functions/getSMSprice?country="+data.country+"&currency="+data.currency+"&noOfSMS="+data.noOfSMS;
+  
   if (data) {
     makeApiCall(data, "text");
   }
@@ -110,10 +111,6 @@ function getSendOtpPricing() {
   var data = {};
   data['param'] = {};
 
-  data["type"] = "POST";
-  data["dataType"] = "text";
-  data["apiUrl"] = "https://msg91.netlify.app/.netlify/functions/getSMSprice?country="+data.country+"&currency="+data.currency+"&noOfSMS="+data.noOfSMS;
-
   data['param']["wallet"] = 1;
   data['param']["server_action"] = 511;
   data['param']["request"] = "pricing_details";
@@ -122,12 +119,17 @@ function getSendOtpPricing() {
   data['param']["currency"] = jQuery("#sendOtp_currency").val();
   data['param']["originCountry"] = ___ORIGIN_COUNTRY;
   data['param']["action"] = "fetchPricing";
+  
+  data["type"] = "POST";
+  data["dataType"] = "text";
+  data["apiUrl"] = "https://msg91.netlify.app/.netlify/functions/getSMSprice?country="+data.country+"&currency="+data.currency+"&noOfSMS="+data.noOfSMS;
+  
   if (data) {
     makeApiCall(data, "sendOtp_text");
   }
 }
 
-function makeApiCall(data, type) {  
+function makeApiCall(data, type) {
   var type_re = type;
   var t = new Date();
   if (type == "sendOtp_text") {
