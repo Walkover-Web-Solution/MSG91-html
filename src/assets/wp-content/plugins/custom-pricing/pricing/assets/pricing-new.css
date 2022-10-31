@@ -895,6 +895,7 @@ h5.addsonemail {
     font-family: 'Roboto';
 	color: #5D6164;
 	margin-bottom: 5px;
+  margin-top: 40px;
 }
 .mainblueemail{
 	padding:0px 30px;
@@ -954,10 +955,11 @@ p.highbottom {
 p.amountnewemail {
     font-size: 13px;
     font-family: 'Roboto';
+    margin: 0;
 }
+
 h6.peremailprice {
-    font-size: 13px;
-    font-family: 'Roboto';
+    font-size: 13px;    
 }
 .alignrighttab {
     padding-bottom: 0;

@@ -289,13 +289,10 @@ function drawNewEmailPricingUI() {
             "</h4>";
           item.plan_services.forEach((o) => {
             html +=
-              '<p class="amountnewemail">' +
-              o.service_credit.free_credits +
-              " " +
-              o.service_credit.service.name +
-              '</p><a class="sms-free-bt getfreenewbuton" href="https://control.msg91.com/signup/" target="_blank">Get Started</a>';
+              '<p class="amountnewemail">' + o.service_credit.free_credits +" " +o.service_credit.service.name
+              '</p>';
           });
-          html += '<div class="mainaddon"><h5 class="addsonemail">Add-Ons</h5>';
+          html += '<div class="mainaddon mt-5"><h5 class="addsonemail">Extra</h5>';
           item.plan_services.forEach((o) => {
             let __rtObj = o.service_credit.service_credit_rates.find(
               (o) => o.currency_id == selectedCurrency
@@ -310,6 +307,7 @@ function drawNewEmailPricingUI() {
                 "</h6>";
             }
           });
+          html+='<a class="sms-free-bt getfreenewbuton" href="https://control.msg91.com/signup/" target="_blank">Get Started</a>'
           html += "</div>";
         }
         html += "</div>";
