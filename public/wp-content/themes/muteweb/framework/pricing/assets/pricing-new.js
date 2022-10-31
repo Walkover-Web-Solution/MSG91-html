@@ -76,7 +76,7 @@ function drawUiSendOtp(postData, obj) {
       jQuery("#sendOtp_totalAmountTrans").text(obj[4].total);
     }
 
-    if (data[106]) {
+    if (obj[106]) {
       jQuery("#sendOtp_amountPerSmsOTP").text(obj[106].rate);
       jQuery("#sendOtp_totalAmountOTP").text(obj[106].total);
     }
