@@ -3,9 +3,8 @@ const fetch = require('node-fetch')
 const handler = async function (event) {
   const country = event.queryStringParameters.country;
   const currency = event.queryStringParameters.currency;
-  const noOfSMS = event.queryStringParameters.noOfSMS;
-  const headers = JSON.stringify(event.headers);
-  var originCountry = headers['x-country']
+  const noOfSMS = event.queryStringParameters.noOfSMS;  
+  var originCountry = event.headers['x-country']
   try {
     originCountry = (originCountry === 'IN') ? 'India' : originCountry;
     const response = await fetch(`https://control.msg91.com/action_layer.php?action=511&request=pricing_details&wallet=1&country=${country}&currency=${currency}&noOfSMS=${noOfSMS}&originCountry=${originCountry}`)
