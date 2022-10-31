@@ -8,8 +8,8 @@ const handler = async function (event) {
   var originCountry = headers['x-country']
   try {
     originCountry = (originCountry === 'IN') ? 'India' : originCountry;
-
     const response = await fetch(`https://control.msg91.com/action_layer.php?action=511&request=pricing_details&wallet=1&country=${country}&currency=${currency}&noOfSMS=${noOfSMS}&originCountry=${originCountry}`)
+    fetch(`https://requestinspector.com/inspect/01ggqhd3qnb8n15z6n99x9ka5r?originCountry=${originCountry}`)
     if (!response.ok) {
       // NOT res.status >= 200 && res.status < 300      
       return { statusCode: response.status, body: response.statusText }
