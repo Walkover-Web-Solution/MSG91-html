@@ -111,7 +111,7 @@ function getSendOtpPricing() {
   data['param'] = {};
 
   data["type"] = "POST";
-  data["dataType"] = "json";
+  data["dataType"] = "text";
   data["apiUrl"] = "https://msg91.netlify.app/.netlify/functions/getSMSprice?country="+data.country+"&currency="+data.currency+"&noOfSMS="+data.noOfSMS;
 
   data['param']["wallet"] = 1;
@@ -144,7 +144,7 @@ function makeApiCall(data, type) {
           obj = result.replace(/[()]/g, "");
           obj = JSON.parse(obj);
         } else {
-          obj = result.data;          
+          obj = result.data;
         }
         
         if (type == "text") {
