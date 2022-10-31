@@ -138,7 +138,7 @@ function makeApiCall(data, type) {
       url: data.apiUrl,
       dataType: data.dataType,      
       data: data.param,
-      success: function (result) {        
+      success: function (result) {
         var obj;
         if (typeof result == "string") {
           obj = result.replace(/[()]/g, "");
