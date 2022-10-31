@@ -122,8 +122,7 @@ function getSendOtpPricing() {
   }
 }
 
-function makeApiCall(data, type) {
-  console.log('makeApiCall:request data', data); 
+function makeApiCall(data, type) {  
   var type_re = type;
   var t = new Date();
   if (type == "sendOtp_text") {
@@ -142,7 +141,7 @@ function makeApiCall(data, type) {
           obj = result.replace(/[()]/g, "");
           obj = JSON.parse(obj);
         } else {
-          obj = result.data;
+          obj = result.data;          
         }
         
         if (type == "text") {
@@ -207,7 +206,7 @@ function getWhatsAppPricing() {
   data["request"] = "pricing_details";  
   data["country"] = "all";
   data["noOfSMS"] = jQuery("#noOfEmail").val();
-  data["currency"] = jQuery("#currency_email").val();
+  //data["currency"] = jQuery("#currency_email").val();
   data["originCountry"] = "India";  
   data["apiUrl"] = "https://subscription.msg91.com/api/plans?ms_id=5";
   data["action"] = "fetchPricing";
@@ -322,23 +321,35 @@ function drawNewEmailPricingUI() {
   }
 }
 
-function drawUiForWhatsApp(conf, plans){
-  console.log('drawUiForWhatsApp', conf, plans);
-  var html = '';
-  plans.forEach(function(plan, index) {
+function drawUiForWhatsApp(conf, plans){  
+  let selectedCurrency = jQuery("#currency_wtsapp").val();
+  if(selectedCurrency === 'IND') selectedCurrency = 'INR';
+  let symbol;
+  switch (selectedCurrency) {
+    case 'INR':
+    case 'IND':
+      symbol = "₹";
+      break;
+    case 'USD':
+      symbol = "$";
+      break;
+    case 'GBP':
+      symbol = "£";
+      break;    
+  }
+  var html = '';  
+  plans.forEach(function(plan, index) {    
     let amount = plan.plan_amounts.find((o) =>
-      o.currency.short_name == 'INR' && o.plan_type.name === 'Monthly'
+      o.currency.short_name === selectedCurrency && o.plan_type.name === 'Monthly'
     );
     let freeSession = plan.plan_services[0].service_credit.free_credits;
-    freeSession = freeSession/1000;
-
-      console.log('drawUiForWhatsApp amount', amount);
+    freeSession = freeSession/1000;    
     html+=`<div class="pricing-sms-wrap col-md-4 pricingboxfirst">
       <div class="mainblueemail">
         <h3 class="bluetopcircle">${plan.name}</h3>
       </div>
       <h4 class="monthsystem">        
-        ₹${amount.plan_amount}/${amount.plan_type.name}
+        ${symbol}${amount.plan_amount}/${amount.plan_type.name}
       </h4>
       <p class="amountnewemail">${freeSession}K Sessions</p>`
     if(freeSession >= 10 ){
@@ -356,8 +367,21 @@ function drawUiForWhatsApp(conf, plans){
         <h5 class="addsonemail">*Extra</h5>
         <h6 style="color: #5d6164;" class="peremailprice">₹0.10</h6>
       </div>-->
-    </div>`;
+    </div>`;    
   });
+  html += `<div
+  class="pricing-sms-wrap col-md-4 pricingboxfirst">
+  <div class="mainblueemail">
+    <h3 class="bluetopcircle">Custom
+    </h3>
+  </div>
+  <p
+    class="amountnewemail whatsapp_bottom">
+    Custom Sessions</p>
+  <a class="sms-free-bt getfreenewbuton cutom_btn"
+    href="/contact-us/">Talk to
+    Experts</a>
+</div>`
   jQuery("#whats-app-plans").html(html);
 }
 // jQuery(document).on("change","#emailQueryForm select",function() {
@@ -578,6 +602,15 @@ jQuery(document).ready(function ($) {
     setTimeout(function () {
       getEmailPricing();
       $(".currencytext_email").html(v);
+    }, 100);
+  });
+
+  $(document).on("click", ".currency_wtsapp_drop li", function () {
+    var v = $(this).attr("data-currency");
+    $("#currency_wtsapp").val(v).change();
+    setTimeout(function () {
+      getWhatsAppPricing();
+      $(".currencytext_wtsapp").html(v);
     }, 100);
   });
 
