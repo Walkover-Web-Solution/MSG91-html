@@ -17,6 +17,11 @@
     font-size: 14px;
     font-weight: 400;
 }
+.price-note{
+  background-color: #FFEDBB;
+  padding: 10px;  
+  margin-top: 10px;
+}
 .outbound-voice-box,
 .number-mails-box,
 .number-sms-box{
@@ -1058,11 +1063,9 @@ h4.rcstabheading {
 		margin-bottom: 30px !important;
 	}
 }
-.whatsappltabnewpricing .w_extra_cost_text {
-  text-align: right;
-  font-size: 12px;
-  color: #5D6164;
-  padding-right: 5px;
+.whatsappltabnewpricing .w_extra_cost_text {  
+  font-size: 13px;  
+  margin: 0;
 }
 .whatsappltabnewpricing .w_heading_pricing_tab_div {
   text-align: center;
