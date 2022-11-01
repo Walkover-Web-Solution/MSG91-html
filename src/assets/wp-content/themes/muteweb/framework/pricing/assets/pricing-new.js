@@ -93,8 +93,7 @@ function getSmsPricing() {
   data['param']["request"] = "pricing_details";
   data['param']["country"] = jQuery("#sms_country").val();
   data['param']["noOfSMS"] = jQuery("#noOfSMS").val();
-  data['param']["currency"] = jQuery("#currency").val();
-  data['param']["originCountry"] = ___ORIGIN_COUNTRY;
+  data['param']["currency"] = jQuery("#currency").val();  
   data['param']["action"] = "fetchPricing";
 
   data["type"] = "POST";
@@ -116,8 +115,7 @@ function getSendOtpPricing() {
   data['param']["request"] = "pricing_details";
   data['param']["country"] = jQuery("#sendotp_country").val();
   data['param']["noOfSMS"] = jQuery("#sendOtp_noOfSMS").val();
-  data['param']["currency"] = jQuery("#sendOtp_currency").val();
-  data['param']["originCountry"] = ___ORIGIN_COUNTRY;
+  data['param']["currency"] = jQuery("#sendOtp_currency").val();  
   data['param']["action"] = "fetchPricing";
   
   data["type"] = "POST";
