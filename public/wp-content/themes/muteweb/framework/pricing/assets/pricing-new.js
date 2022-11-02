@@ -240,9 +240,11 @@ function drawNewEmailPricingUI() {
     selectedCurrency = 3;
   }
 
-  let selectedMode = jQuery("#duration").val(); //
+  //let selectedMode = jQuery("#duration").val(); 
+  let selectedMode = 'Monthly'; 
   jQuery(".firstBox").remove();
   jQuery(".pricingboxsecond").remove();
+  console.log('__EMAIL_PRICING_DATA', __EMAIL_PRICING_DATA);
   if (__EMAIL_PRICING_DATA && __EMAIL_PRICING_DATA.length > 0) {
     let html = "";
     var j = 1;
@@ -263,6 +265,7 @@ function drawNewEmailPricingUI() {
             o.currency_id == selectedCurrency &&
             o.plan_type.name === selectedMode
         );
+        console.log('drawNewEmailPricingUI', obj, selectedCurrency, selectedMode);
         if (obj) {
           let symbol;
           switch (obj.currency_id) {
