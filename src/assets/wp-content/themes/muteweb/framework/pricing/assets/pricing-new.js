@@ -91,7 +91,7 @@ function getSmsPricing() {
 
   data["type"] = "POST";
   data["dataType"] = "text";
-  data["apiUrl"] = "https://msg91.netlify.app/.netlify/functions/getSMSprice?country="+data.param.country+"&currency="+data.param.currency+"&noOfSMS="+data.param.noOfSMS;
+  data["apiUrl"] = "https://api.msg91.com/api/v5/web/getPricingDetails?currency="+data.param.currency+"&noOfSMS="+data.param.noOfSMS+"&wallet=1";
 
   if (data) {
     makeApiCall(data, "text");
@@ -113,7 +113,7 @@ function getSendOtpPricing() {
   
   data["type"] = "POST";
   data["dataType"] = "text";
-  data["apiUrl"] = "https://msg91.netlify.app/.netlify/functions/getSMSprice?country="+data.param.country+"&currency="+data.param.currency+"&noOfSMS="+data.param.noOfSMS;
+  data["apiUrl"] = "https://api.msg91.com/api/v5/web/getPricingDetails?currency="+data.param.currency+"&noOfSMS="+data.param.noOfSMS+"&wallet=1";
   
   if (data) {
     makeApiCall(data, "sendOtp_text");
