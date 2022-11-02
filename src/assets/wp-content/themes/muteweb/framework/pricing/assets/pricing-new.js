@@ -70,6 +70,7 @@ function drawUi(postData, obj) {
 }
 
 function drawUiSendOtp(postData, obj) {  
+  console.log('drawUiSendOtp', obj);
   if (obj) {
     jQuery("#sendOtp_amountPerSmsOTP").text(obj['106'].rate);
     jQuery("#sendOtp_totalAmountOTP").text(obj['106'].total);
