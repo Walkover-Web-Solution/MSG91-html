@@ -56,13 +56,13 @@ const smsPlanGBP = {
 };
 
 function drawUi(postData, obj) {  
-  if (obj) {
-    if (obj[4]) {
+  if (obj.data) {
+    if (obj.data[4]) {
       jQuery("#totalAmountTrans").text(obj.data['4'].total);
       jQuery("#amountPerSmsTrans").text(obj.data['4'].rate);
     }
 
-    if (obj[106]) {
+    if (obj.data[106]) {
       jQuery("#totalAmountOTP").text(obj.data['106'].total);
       jQuery("#amountPerSmsOTP").text(obj.data['106'].rate);
     }
@@ -71,7 +71,7 @@ function drawUi(postData, obj) {
 
 function drawUiSendOtp(postData, obj) {  
   console.log('drawUiSendOtp', obj);
-  if (obj) {
+  if (obj.data) {
     jQuery("#sendOtp_amountPerSmsOTP").text(obj.data['106'].rate);
     jQuery("#sendOtp_totalAmountOTP").text(obj.data ['106'].total);
   }
