@@ -4152,10 +4152,11 @@ body #mega-menu-item-2078 a:hover, body #mega-menu-item-25 a:hover {
     float: right;
     margin: -10px -8px 0 0;
     max-width: 15px;
+    filter: invert(1);
 }
 .main-header span.mega-indicator:after {
     content: '';
-    background: url(https://msg91.com/wp-content/uploads/2021/01/chevron_down.png) no-repeat 
+    background: url(/images/down.svg) no-repeat 
 !important;
     font-family: inherit !important;
     top: 15px !important;
