@@ -826,7 +826,7 @@ ul.sub-menu{
     ##mega-menu-direct-signup-menu>li.mega-menu-item.menu-outline-btn a:before{
         content:'';
         position:absolute;
-        background-image:url(https://msg91.com/wp-content/uploads/2020/06/btn-arrow.png);
+        background-image:url(/wp-content/uploads/2020/06/btn-arrow.png);
         height:13px;
         width:10px;
         background-size:6px;
@@ -938,7 +938,7 @@ ul.sub-menu{
 .footer-top-bg{
     height:460px;
     margin-bottom:-65px;
-    background:url(https://msg91.com/wp-content/uploads/sites/4/2020/07/footer-bg.png) no-repeat 
+    background:url(/wp-content/uploads/sites/4/2020/07/footer-bg.png) no-repeat 
 center bottom,linear-gradient(to bottom,transparent,transparent 44%,#000 35%,#000) 
 no-repeat center bottom
 }
@@ -1039,7 +1039,7 @@ footer.footer-main ul{
 }
 .footer-first:before{
     content:'';
-    background:url(https://msg91.com/wp-content/uploads/2020/07/footer_left_icon.svg);
+    background:url(/wp-content/uploads/2020/07/footer_left_icon.svg);
     position:absolute;
     bottom:30px;
     width:180px;
@@ -1246,7 +1246,7 @@ ul.mega-sub-menu a{
     position: absolute;
     right: -10px;
     top: 10px;
-    background: url(https://msg91.com/wp-content/uploads/2021/01/chevron-down.png) no-repeat;
+    background: url(/wp-content/uploads/2021/01/chevron-down.png) no-repeat;
     height: 22px;
     width: 22px;
     background-size: contain;
@@ -1259,7 +1259,7 @@ ul.mega-sub-menu a{
     position: absolute;
     right: -21px;
     top: -2px;
-    background: url(https://msg91.com/wp-content/uploads/2021/01/chevron-down-blue.png) no-repeat;
+    background: url(/wp-content/uploads/2021/01/chevron-down-blue.png) no-repeat;
     height: 18px;
     width: 18px;
     background-size: contain;
@@ -1351,7 +1351,7 @@ p.guide-description{
     min-width:300px
 }
 .custom-html-widget .topbar{
-    /*background:url(https://msg91.com/wp-content/themes/muteweb/assets/img/topbar_bg.png) 
+    /*background:url(/wp-content/themes/muteweb/assets/img/topbar_bg.png) 
 no-repeat;*/
     background-color: #222;
     background-size:cover;
@@ -1707,7 +1707,7 @@ no-repeat;*/
 }
 .sms-report-box{
     border:10px solid transparent;
-    border-image:url(https://msg91.com/wp-content/uploads/2020/07/border-box.png) 10 round
+    border-image:url(/wp-content/uploads/2020/07/border-box.png) 10 round
 }
 .sms-arrow .elementor-image{
     transform:rotate(90deg)
@@ -1717,7 +1717,7 @@ no-repeat;*/
 }
 .sms-camp-heading .elementor-heading-title span:before{
     content:"";
-    background-image:url(https://msg91.com/wp-content/uploads/2020/07/spreadsheet.png);
+    background-image:url(/wp-content/uploads/2020/07/spreadsheet.png);
     position:absolute;
     width:353px;
     height:62px;
@@ -1728,7 +1728,7 @@ no-repeat;*/
 }
 .sms-capm-banner:before{
     content:"";
-    background-image:url(https://msg91.com/wp-content/uploads/2020/08/border-left.svg);
+    background-image:url(/wp-content/uploads/2020/08/border-left.svg);
     position:absolute;
     width:580px;
     height:calc(100% - 108px);
@@ -1739,7 +1739,7 @@ no-repeat;*/
 }
 .sms-capm-banner:after{
     content:"";
-    background-image:url(https://msg91.com/wp-content/uploads/2020/08/border-right.svg);
+    background-image:url(/wp-content/uploads/2020/08/border-right.svg);
     position:absolute;
     right:370px;
     width:711px;
@@ -1765,7 +1765,7 @@ no-repeat;*/
     background:#7c7c7c;
     color:#fff;
     border-radius:2px;
-    background-image:url(https://msg91.com/wp-content/uploads/sites/4/2020/09/country_arrow.svg);
+    background-image:url(/wp-content/uploads/sites/4/2020/09/country_arrow.svg);
     background-repeat:no-repeat;
     background-position:center right 12px;
     -webkit-background-position:center right 12px;
@@ -1859,7 +1859,7 @@ div#gdpr-cookie-consent-bar{
 }*/
 .whatsapp-pricing-box{
     border:10px solid transparent;
-    border-image:url(https://msg91.com/wp-content/uploads/2020/07/border-box.png) 10 round
+    border-image:url(/wp-content/uploads/2020/07/border-box.png) 10 round
 }
 .template-pricing{
     display:flex;
@@ -1971,7 +1971,7 @@ div#gdpr-cookie-consent-bar{
 }
 .flexible-pricing-box{
     border:10px solid transparent;
-    border-image:url(https://msg91.com/wp-content/uploads/2020/07/border-box.png) 10 round
+    border-image:url(/wp-content/uploads/2020/07/border-box.png) 10 round
 }
 .flexible-mini-box p{
     margin:0!important
@@ -1990,7 +1990,7 @@ div#gdpr-cookie-consent-bar{
 .direct-man-wrapper h3.elementor-heading-title:before{
     content:'';
     position:absolute;
-    border-image:url(https://msg91.com/wp-content/uploads/2020/07/pink_circle.svg)
+    border-image:url(/wp-content/uploads/2020/07/pink_circle.svg)
 }
 .more-sms-box-mini{
     max-width:335px;
@@ -2038,7 +2038,7 @@ div#gdpr-cookie-consent-bar{
     right:-75px;
     width:205px;
     height:205px;
-    background:url(https://msg91.com/wp-content/uploads/2020/06/Mascot.svg);
+    background:url(/wp-content/uploads/2020/06/Mascot.svg);
     bottom:250px
 }
 .samsung-sharp-sans{
@@ -2124,7 +2124,7 @@ div#gdpr-cookie-consent-bar{
     line-height:23px;
     font-family:samsung sharp sans;
     border:10px solid transparent;
-    border-image:url(https://msg91.com/wp-content/uploads/2020/07/border-box.png) 10 round
+    border-image:url(/wp-content/uploads/2020/07/border-box.png) 10 round
 }
 .testimonials .team-card .client-data{
     display:flex;
@@ -2156,19 +2156,19 @@ div#gdpr-cookie-consent-bar{
 }
 .msg91-today-1{
     border:10px solid transparent;
-    border-image:url(https://msg91.com/wp-content/uploads/2020/07/box_yellow.png) 10 round
+    border-image:url(/wp-content/uploads/2020/07/box_yellow.png) 10 round
 }
 .msg91-today-2{
     border:10px solid transparent;
-    border-image:url(https://msg91.com/wp-content/uploads/2020/07/box_green.png) 10 round
+    border-image:url(/wp-content/uploads/2020/07/box_green.png) 10 round
 }
 .msg91-today-3{
     border:10px solid transparent;
-    border-image:url(https://msg91.com/wp-content/uploads/2020/07/box_orange.png) 10 round
+    border-image:url(/wp-content/uploads/2020/07/box_orange.png) 10 round
 }
 .flexible-pricing,.otp-solution-box{
     border:10px solid transparent;
-    border-image:url(https://msg91.com/wp-content/uploads/2020/07/border-box.png) 10 round
+    border-image:url(/wp-content/uploads/2020/07/border-box.png) 10 round
 }
 .uael-nav-menu .current_page_item a{
     font-weight:700
@@ -2207,7 +2207,7 @@ div#gdpr-cookie-consent-bar{
 .contact-tab-box .elementor-tab-desktop-title a:before{
     content:'';
     position:absolute;
-    background:url(https://msg91.com/wp-content/uploads/2022/04/get-in-tpuch.svg) no-repeat;
+    background:url(/wp-content/uploads/2022/04/get-in-tpuch.svg) no-repeat;
     height:28px;
     width:28px;
     top:12px;
@@ -2217,13 +2217,13 @@ div#gdpr-cookie-consent-bar{
     transform:translateX(-50%)
 }
 .contact-tab-box .elementor-tab-desktop-title:nth-child(2) a:before{
-    background:url(https://msg91.com/wp-content/uploads/2022/04/email.svg) no-repeat
+    background:url(/wp-content/uploads/2022/04/email.svg) no-repeat
 }
 .contact-tab-box .elementor-tab-desktop-title:nth-child(3) a:before{
-    background:url(https://msg91.com/wp-content/uploads/2022/04/faq.svg) no-repeat
+    background:url(/wp-content/uploads/2022/04/faq.svg) no-repeat
 }
 .contact-tab-box .elementor-tab-desktop-title:nth-child(4) a:before{
-    background:url(https://msg91.com/wp-content/uploads/2020/07/contact_icon3.svg) no-repeat
+    background:url(/wp-content/uploads/2020/07/contact_icon3.svg) no-repeat
 }
 .contact-tab-box label{
     font-size:20px!important;
@@ -2319,7 +2319,7 @@ select{
     content: '';
     width: 34px;
     height: 28px;
-    background-image: url(https://msg91.com/wp-content/uploads/2020/12/red_heart_icon.svg);
+    background-image: url(/wp-content/uploads/2020/12/red_heart_icon.svg);
     position: absolute;
     top: 50%;
     right: -42px;
@@ -3001,7 +3001,7 @@ Here---------------------------------------->|>>*/ @media (max-width:768px){
     .contact-man-box:before{
         content:'';
         position:absolute;
-        background:url(https://msg91.com/wp-content/uploads/2020/07/ximg_1.png.pagespeed.ic.r1IRsf5NJW.webp) 
+        background:url(/wp-content/uploads/2020/07/ximg_1.png.pagespeed.ic.r1IRsf5NJW.webp) 
 no-repeat;
         height:150px;
         width:120px;
@@ -3480,7 +3480,7 @@ path.b{
 .send-otp-banner:before{
     content:'';
     position:absolute;
-    background:url(https://msg91.com/wp-content/uploads/2020/06/Group-17469.png) no-repeat;
+    background:url(/wp-content/uploads/2020/06/Group-17469.png) no-repeat;
     bottom:-65px;
     left:5%;
     width:55px;
@@ -3492,7 +3492,7 @@ path.b{
     content:'';
     right:5%;
     bottom:-95px;
-    background:url(https://msg91.com/wp-content/uploads/2020/06/Group-17456.png) no-repeat;
+    background:url(/wp-content/uploads/2020/06/Group-17456.png) no-repeat;
     width:95px;
     height:135px
 }
@@ -3719,7 +3719,7 @@ a.case-study-tag:hover{
     margin-bottom:145px
 }
 .partner_banner_heading h2.elementor-heading-title span{
-    background:url(https://msg91.com/wp-content/uploads/2020/08/partner_heading.png) no-repeat;
+    background:url(/wp-content/uploads/2020/08/partner_heading.png) no-repeat;
     background-size:100%;
     height:100%;
     background-position:center;
@@ -3768,7 +3768,7 @@ a.case-study-tag:hover{
     text-align:center
 }
 .add_partner_form select{
-    background:url(https://msg91.com/wp-content/uploads/2020/08/partner_select_arrow.svg);
+    background:url(/wp-content/uploads/2020/08/partner_select_arrow.svg);
     background-repeat:no-repeat;
     background-position:top 17px right 9px;
     text-align:center;
@@ -3881,7 +3881,7 @@ ul.benefits-custom-list li:before {
     position: absolute;
     left: -39px;
     top: 7px;
-    background: url(https://msg91.com/wp-content/uploads/sites/4/2020/07/benefits_check.svg) 
+    background: url(/wp-content/uploads/sites/4/2020/07/benefits_check.svg) 
 no-repeat;
     height: 20px;
     width: 20px;
@@ -3892,7 +3892,7 @@ ul.benefits-custom-list a {
     text-decoration: underline;
 }
 .sms-new-feature span {
-    background: url(https://msg91.com/wp-content/uploads/2020/06/Path-26063.png);
+    background: url(/wp-content/uploads/2020/06/Path-26063.png);
     background-repeat: no-repeat;
     background-position: center left -9px;
     background-size: 100%;
@@ -4053,7 +4053,7 @@ input#gform_submit_button_18 {
     padding: 0 43px 0 4px;
 }
 .home-new-banner .elementor-heading-title span {
-    background: url(https://msg91.com/wp-content/uploads/2020/08/develop-banner-shape.jpg) 
+    background: url(/wp-content/uploads/2020/08/develop-banner-shape.jpg) 
 no-repeat;
     background-size: cover;
     background-position: center right;
@@ -4074,7 +4074,7 @@ no-repeat;
     position: absolute;
     right: -32px;
     top: 7px;
-    background: url(https://msg91.com/wp-content/uploads/2021/01/arrow-right.png) no-repeat;
+    background: url(/wp-content/uploads/2021/01/arrow-right.png) no-repeat;
     height: 20px;
     width: 20px;
     background-size: contain;
@@ -4090,23 +4090,23 @@ no-repeat;
     margin-left: 95px;
 }
 .home-collapse .elementor-tab-title {
-    background: url(https://msg91.com/wp-content/uploads/2021/01/sms.png) no-repeat;
+    background: url(/wp-content/uploads/2021/01/sms.png) no-repeat;
     background-position: left 12px top 8px !important;
     background-size: 40px!important;
     padding-left: 39px !important;
     padding-top: 20px !important;
 }
 .home-collapse #elementor-tab-title-5352, .home-collapse #elementor-tab-title-1812{
-    background: url(https://msg91.com/wp-content/uploads/2021/01/EMAIL.png) no-repeat;
+    background: url(/wp-content/uploads/2021/01/EMAIL.png) no-repeat;
 }
 .home-collapse #elementor-tab-title-5353, .home-collapse #elementor-tab-title-1813{
-    background: url(https://msg91.com/wp-content/uploads/2021/01/voice.png) no-repeat;
+    background: url(/wp-content/uploads/2021/01/voice.png) no-repeat;
 }
 .elementor-accordion-item {
     margin-bottom: 18px;
 }
 .home-empowr-heading span {
-    background: url(https://msg91.com/wp-content/uploads/2021/01/home-empowr-shape.png) no-repeat;
+    background: url(/wp-content/uploads/2021/01/home-empowr-shape.png) no-repeat;
     background-size: contain;
     background-position: center;
     padding: 0 15px 0 0;
@@ -4185,7 +4185,7 @@ Cookie New CSS Here----------------------------->|>>*/ div#gdpr-cookie-consent-b
 .gdpr_messagebar_content h3.gdpr_messagebar_head:before {
     content: '';
     position: absolute;
-    background: url(https://msg91.com/wp-content/uploads/2021/01/cookie.png) no-repeat;
+    background: url(/wp-content/uploads/2021/01/cookie.png) no-repeat;
     left: 0;
     top: -8px;
     height: 40px;
@@ -4223,7 +4223,7 @@ a#cookie_action_reject, a#cookie_action_accept {
 }
 a#cookie_action_reject {
     padding: 6px 24px !important;
-    background: url(https://msg91.com/wp-content/uploads/2021/01/button_icon.svg) no-repeat;
+    background: url(/wp-content/uploads/2021/01/button_icon.svg) no-repeat;
     background-position: right -2px top -1px;
 }
 a#cookie_action_accept:after {
@@ -4234,7 +4234,7 @@ a#cookie_action_accept:after {
     height: 25px;
     width: 22px;
     background-size: contain;
-    background: url(https://msg91.com/wp-content/uploads/2021/01/button_icon.svg);
+    background: url(/wp-content/uploads/2021/01/button_icon.svg);
     background-repeat: no-repeat;
 }
 a#cookie_action_settings {
@@ -4287,25 +4287,25 @@ li#mega-menu-item-25 a:hover, #mega-menu-wrap-primary-menu ul.mega-sub-menu a:ho
     justify-content: center;
 }
 .make-it-bg span {
-    background: url(https://msg91.com/wp-content/uploads/2021/02/make-shape.svg) no-repeat !important;
+    background: url(/wp-content/uploads/2021/02/make-shape.svg) no-repeat !important;
     background-size: 100% !important;
         padding: 0 17px 0 4px!important;
 }
 .home-empowr-heading.self-service-bg span {
-    background: url(https://msg91.com/wp-content/uploads/2021/02/self-service-shape.svg) no-repeat;
+    background: url(/wp-content/uploads/2021/02/self-service-shape.svg) no-repeat;
     background-size: 100%;
 }
 .home-empowr-heading.unifield-bg span {
-    background: url(https://msg91.com/wp-content/uploads/2021/02/unifield-agent.svg) no-repeat;
+    background: url(/wp-content/uploads/2021/02/unifield-agent.svg) no-repeat;
     background-size: 100%;
 }
 .home-empowr-heading.analytics-bg span {
-    background: url(https://msg91.com/wp-content/uploads/2021/02/analytics-shape.svg) no-repeat;
+    background: url(/wp-content/uploads/2021/02/analytics-shape.svg) no-repeat;
     background-size: 100%;
         padding-right: 64px !important;
 }
 .integrations-bg span {
-    background: url(https://msg91.com/wp-content/uploads/2021/02/powerful-int-shape.svg) no-repeat !important;
+    background: url(/wp-content/uploads/2021/02/powerful-int-shape.svg) no-repeat !important;
     background-size: 100% !important;
 }
 .overview-tab.active a span, .overview-tab a:hover span, .overview-tab a:active span {
@@ -4543,7 +4543,7 @@ ul#mega-menu-primary-menu li a:hover {
     font-family: 'Font Awesome 5 Free';
     font-size: 14px;
     font-weight: 400;
-    background: url(https://msg91.com/wp-content/uploads/2021/01/chevron_down.png) no-repeat!important;
+    background: url(/wp-content/uploads/2021/01/chevron_down.png) no-repeat!important;
     font-family: inherit!important;
     top: 15px!important;
     background-size: contain!important;
@@ -4897,10 +4897,9 @@ ul#mega-menu-primary-menu li a:hover {
 }
 
 
-#tabbingpricing .elementor-tabs .elementor-tab-title {
-    padding: 0px 22px !important;
-    line-height: 34px !important;
+#tabbingpricing .elementor-tabs .elementor-tab-title {    
     border-radius: 5px;
+    height: 42px;
 }
 @media only screen and (max-width: 1024px){
     .whatsapp .dropdown-content {
@@ -4918,8 +4917,7 @@ ul#mega-menu-primary-menu li a:hover {
     .shorturl .dropdown-content {
         min-width: 585px;
     }
-    #tabbingpricing .elementor-tabs .elementor-tab-title {
-        padding: 0px 10px !important;
+    #tabbingpricing .elementor-tabs .elementor-tab-title {        
         font-size: 10px;
     }
 }
@@ -5099,8 +5097,7 @@ ul#mega-menu-primary-menu li a:hover {
     }
     #tabbingpricing .elementor-tabs .elementor-tab-title {
         padding: 0px 12px !important;
-        font-size: 14px;
-        line-height: 25px !important;
+        font-size: 14px;        
         text-align: center;
     }
     .productchannel ul.mega-sub-menu .mega-menu-row {
@@ -5298,7 +5295,7 @@ div#pricingsmscl {
     line-height: 61px;
 }
 .makesstand ul.engagment li:before {
-    content: url(https://msg91.com/wp-content/uploads/2022/01/Vector.svg);
+    content: url(/wp-content/uploads/2022/01/Vector.svg);
     left: 0;
     position: absolute;
 }
@@ -5315,59 +5312,50 @@ div#pricingsmscl {
     font-family: Proxima Nova;
 }
 /* For tabbing css in pricing page */
-#tabingchaneel .elementor-tabs-wrapper .elementor-tab-title:first-child a:before{
-    content: url(https://msg91.com/wp-content/uploads/2022/01/sms.svg);
-    position: relative;
-    top: 9px;
-    left: -5px
+#tabingchaneel .elementor-tabs-wrapper .elementor-tab-title a:before{
+    float: left;
+}
+#tabingchaneel .elementor-tabs-wrapper .elementor-tab-title a{
+    display: block;
+    line-height: 24px;
+}
+#tabingchaneel .elementor-tabs-wrapper .elementor-tab-title a:before{
+    content: url(/wp-content/uploads/2022/01/sms.svg);
+    display: block;
+    margin-right: 10px;
+    
 }
 #tabingchaneel .elementor-tabs-wrapper .elementor-tab-title:nth-child(2) a:before{
-    content: url(https://msg91.com/wp-content/uploads/2022/01/email.svg);
-    position: relative;
-    top: 7px;
-    left: -5px
+    content: url(/wp-content/uploads/2022/01/email.svg);
+    
 }
 #tabingchaneel .elementor-tabs-wrapper .elementor-tab-title:nth-child(3) a:before{
-    content: url(https://msg91.com/wp-content/uploads/2022/01/voice.svg);
-    position: relative;
-    top: 7px;
-    left: -5px;
+    content: url(/wp-content/uploads/2022/01/voice.svg);
+    ;
 }
 #tabingchaneel .elementor-tabs-wrapper .elementor-tab-title:nth-child(4) a:before{
-    content: url(https://msg91.com/wp-content/uploads/2022/01/rcs.svg);
-    position: relative;
-    top: 7px;
-    left: -5px;
+    content: url(/wp-content/uploads/2022/01/rcs.svg);
+    ;
 }
 #tabingchaneel .elementor-tabs-wrapper .elementor-tab-title:nth-child(5) a:before{
-    content: url(https://msg91.com/wp-content/uploads/2022/01/whatsapp.svg);
-    position: relative;
-    top: 7px;
-    left: -5px;
+    content: url(/wp-content/uploads/2022/01/whatsapp.svg);
+    ;
 }
 #tabingchaneel .elementor-tabs-wrapper .elementor-tab-title:nth-child(6) a:before{
-    content: url('https://msg91.com/wp-content/uploads/2022/01/segmento-1.svg');
-    position: relative;
-    top: 7px;
-    left: -5px;
+    content: url('/wp-content/uploads/2022/01/segmento.svg');
+    ;
 }
 #tabingchaneel .elementor-tabs-wrapper .elementor-tab-title:nth-child(7) a:before{
-    content: url('https://msg91.com/wp-content/uploads/2022/01/campaign.svg');
-    position: relative;
-    top: 7px;
-    left: -5px;
+    content: url('/wp-content/uploads/2022/01/campaign.svg');
+    ;
 }
 #tabingchaneel .elementor-tabs-wrapper .elementor-tab-title:nth-child(8) a:before{
-    content: url('https://msg91.com/wp-content/uploads/2022/01/hello.svg');
-    position: relative;
-    top: 7px;
-    left: -5px;
+    content: url('/wp-content/uploads/2022/01/hello.svg');
+    ;
 }
 #tabingchaneel .elementor-tabs-wrapper .elementor-tab-title:nth-child(9) a:before {
-    content: url('https://msg91.com/wp-content/uploads/2022/01/SendOTP.svg');
-    position: relative;
-    top: 7px;
-    left: -5px;
+    content: url('/wp-content/uploads/2022/01/sendOTP.svg');
+    ;
 }
 
 #tabbingpricing .elementor-tab-title.elementor-active {
@@ -5493,7 +5481,7 @@ section.pricing-hello-box12 {
     font-size: 30px;
     margin: 10px 0px 0px 0px;
     padding: 7px 10px 4px 10px;
-    background-image: url(https://msg91.com/wp-content/uploads/2021/01/hello-shap.png);
+    background-image: url(/wp-content/uploads/2021/01/hello-shap.png);
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -5588,8 +5576,7 @@ h2.accesclsindia {
 @media (max-width: 767px){
     #tabbingpricing .elementor-tabs .elementor-tab-title {
         padding: 0 !important;
-        font-size: inherit !important;
-        line-height: 45px !important;
+        font-size: inherit !important;        
         text-align: center;
         border-bottom: 1px solid #ccc;
     }
@@ -5637,7 +5624,7 @@ h2.accesclsindia {
 .hellopagepricingsec .elementor-widget-container .custombackadd {
     margin: 10px 0px 0px 0px;
     padding: 7px 10px 4px 10px;
-    background-image: url(https://msg91.com/wp-content/uploads/2021/01/hello-shap.png);
+    background-image: url(/wp-content/uploads/2021/01/hello-shap.png);
     background-repeat: no-repeat;
     background-size: contain;
     font-size: 30px;
@@ -5694,7 +5681,7 @@ h2.accesclsindia {
 div#bridgethegap h1.elementor-heading-title {
     margin: 10px 0px 0px 0px;
     padding: 7px 10px 4px 10px;
-    background-image: url(https://msg91.com/wp-content/uploads/2022/01/Path-23863-8.svg);
+    background-image: url(/wp-content/uploads/2022/01/Path-23863-8.svg);
     background-repeat: no-repeat;
     background-size: contain;
     font-size: 30px;
@@ -5748,22 +5735,22 @@ div#bridgethegap h1.elementor-heading-title {
     border-radius: 10px;
 }
 .whatsappheadinftab {
-    background: url(https://msg91.com/wp-content/uploads/2022/02/whatsappheading.png) no-repeat;
+    background: url(/wp-content/uploads/2022/02/whatsappheading.png) no-repeat;
 }
 h4.segmentotabheading {
-    background: url(https://msg91.com/wp-content/uploads/2022/02/segmento-heading.png) no-repeat;
+    background: url(/wp-content/uploads/2022/02/segmento-heading.png) no-repeat;
 }
 h4.campaigntabheading {
-    background: url(https://msg91.com/wp-content/uploads/2022/02/campaign-heading.png) no-repeat;
+    background: url(/wp-content/uploads/2022/02/campaign-heading.png) no-repeat;
 }
 .helootopheading {
-    background: url(https://msg91.com/wp-content/uploads/2022/02/hello-top-heading.png) no-repeat;
+    background: url(/wp-content/uploads/2022/02/hello-top-heading.png) no-repeat;
 }
 h2.pricing-fancy-text.sendotpheading {
-    background: url(https://msg91.com/wp-content/uploads/2022/02/sentotp-heading.png) no-repeat !important;
+    background: url(/wp-content/uploads/2022/02/sentotp-heading.png) no-repeat !important;
 }
 h2.voicetopheading {
-    background: url(https://msg91.com/wp-content/uploads/2022/02/voice-top-heading.png) no-repeat;
+    background: url(/wp-content/uploads/2022/02/voice-top-heading.png) no-repeat;
 }
 .commonclassacordian{
     background-position: center center !important;
@@ -5777,19 +5764,19 @@ h2.voicetopheading {
     text-align: center;
 }
 .pricing #tabingchaneel {
-    background: url(https://msg91.com/wp-content/uploads/2020/06/leanguage-master-sms.png) !important;
+    background: url(/wp-content/uploads/2020/06/leanguage-master-sms.png) !important;
     background-position: 95% 48px !important;
     background-repeat: no-repeat !important;
 }
 section#tabingchaneel .elementor-container.elementor-column-gap-default {
-    background: url(https://msg91.com/wp-content/uploads/2022/02/Ellipse-20.png) !important;
+    background: url(/wp-content/uploads/2022/02/Ellipse-20.png) !important;
     background-repeat: no-repeat !important;
 }
 .noneinmain {
     display: none;
 }
 div#shortUrlConversions h2.elementor-heading-title.elementor-size-default span {
-    background-image: url(https://msg91.com/wp-content/uploads/2022/01/Path-23863-8.svg);
+    background-image: url(/wp-content/uploads/2022/01/Path-23863-8.svg);
     background-repeat: no-repeat;
 }
 div#shortUrlTrackPerformance h2.elementor-heading-title.elementor-size-default span {
@@ -5817,10 +5804,8 @@ div#shortUrlComprehensive h2.elementor-heading-title.elementor-size-default span
     height: 30px;
 }
 /*.Email{
-    content: url(https://msg91.com/wp-content/uploads/2022/01/sms.svg);
-    position: relative;
-    top: 9px;
-    left: -5px
+    content: url(/wp-content/uploads/2022/01/sms.svg);
+    
 }*/
 /*///////////mobile select option///////////////*/
 #customTabDropDownMain .elementor-widget-container .select2-container--default {
@@ -5867,7 +5852,7 @@ div#shortUrlComprehensive h2.elementor-heading-title.elementor-size-default span
     width: 0;
 }
 #select2-customtabdropdown-container::before { 
-    content: url(https://msg91.com/wp-content/uploads/2022/04/Vector.svg);
+    content: url(/wp-content/uploads/2022/04/Vector.svg);
     padding-right: 16px;
     margin-top: 7px;
 }
@@ -5879,55 +5864,55 @@ div#shortUrlComprehensive h2.elementor-heading-title.elementor-size-default span
     content: "Select Channels/Application";
 }*/
 .tab-select .SMS {
-    content: url(https://msg91.com/wp-content/uploads/2022/01/sms.svg);
+    content: url(/wp-content/uploads/2022/01/sms.svg);
     position: relative;
     top: 5px;
     left: 0px
 }
 .tab-select .Email {
-    content: url(https://msg91.com/wp-content/uploads/2022/01/email.svg);
+    content: url(/wp-content/uploads/2022/01/email.svg);
     position: relative;
     top: 3px;
     left: 0px
 }
 .tab-select .Voice {
-    content: url(https://msg91.com/wp-content/uploads/2022/01/voice.svg);
+    content: url(/wp-content/uploads/2022/01/voice.svg);
     position: relative;
     top: 2px;
     left: 0px
 }
 .tab-select .RCS {
-    content: url(https://msg91.com/wp-content/uploads/2022/01/rcs.svg);
+    content: url(/wp-content/uploads/2022/01/rcs.svg);
     position: relative;
     top: 5px;
     left: 0px
 }
 .tab-select .WhatsApp {
-    content: url(https://msg91.com/wp-content/uploads/2022/01/whatsapp.svg);
+    content: url(/wp-content/uploads/2022/01/whatsapp.svg);
     position: relative;
     top: 3px;
     left: 0px
 }
 .tab-select .Segmento {
-    content: url(https://msg91.com/wp-content/uploads/2022/01/segmento-1.svg);
+    content: url(/wp-content/uploads/2022/01/segmento.svg);
     position: relative;
     top: 2px;
     left: 0px
 }
 .tab-select .Campaign {
-    content: url(https://msg91.com/wp-content/uploads/2022/01/campaign.svg);
+    content: url(/wp-content/uploads/2022/01/campaign.svg);
     position: relative;
     top: 5px;
     left: 0px
 }
 .tab-select .Hello {
-    content: url(https://msg91.com/wp-content/uploads/2022/01/hello.svg);
+    content: url(/wp-content/uploads/2022/01/hello.svg);
     position: relative;
     top: 5px;
     left: 0px
 }
 .tab-select .SendOTP {
-    content: url(https://msg91.com/wp-content/uploads/2022/01/SendOTP.svg);
+    content: url(/wp-content/uploads/2022/01/SendOTP.svg);
     position: relative;
     top: 5px;
     left: 0px
@@ -6411,11 +6396,11 @@ body.contact-us  div.elementor-tabs > div.elementor-tabs-wrapper {
 
 /*whatsapp pricing 20-06-2022*/
 #whatsappPricingHeadingOne div h2 {
-    background-image: url(https://msg91.com/wp-content/uploads/2022/06/Path-23864.svg);
+    background-image: url(/wp-content/uploads/2022/06/Path-23864.svg);
     background-repeat: no-repeat;
 }
 #whatsappPricingHeadingTwo div h2 {
-    background-image: url(https://msg91.com/wp-content/uploads/sites/4/2022/08/Path-23863.svg);
+    background-image: url(/wp-content/uploads/sites/4/2022/08/Path-23863.svg);
     background-repeat: no-repeat;
     background-position: center;
     padding:15px 0 15px 0 ;
@@ -6445,11 +6430,11 @@ body.contact-us  div.elementor-tabs > div.elementor-tabs-wrapper {
     margin-bottom: 50px;
 }
 .whatsappPricingPage .whatsappPricingPageHeading div h2 {
-    background: url(https://msg91.com/wp-content/uploads/2022/02/whatsappheading.png) center;
+    background: url(/wp-content/uploads/2022/02/whatsappheading.png) center;
     background-repeat: no-repeat;
 }
 .whatsappPricingPage .whatsappPricingPageSubHeading div h2 {
-    background-image: url(https://msg91.com/wp-content/uploads/2022/06/Path-23863.svg);
+    background-image: url(/wp-content/uploads/2022/06/Path-23863.svg);
     background-repeat: no-repeat;
     font-size: 29px;
     margin-bottom: 20px;
@@ -6549,7 +6534,7 @@ body.contact-us  div.elementor-tabs > div.elementor-tabs-wrapper {
     margin-top: 37px;
 }
 .whatsappHeadingDiv .customaddemailback h4{
-    background: url(https://msg91.com/wp-content/uploads/2022/06/Path-23863.svg) no-repeat;
+    background: url(/wp-content/uploads/2022/06/Path-23863.svg) no-repeat;
     background-position: center center;
     background-size: auto;
     padding: 30px 61px;
