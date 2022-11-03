@@ -3585,7 +3585,8 @@ li#field_14_4,.uael-modal-custom li#field_14_8,.uael-modal-custom li#field_14_9{
     min-height:435px;
     padding-top:1px
 }
-.case-study-logo{
+.case-study-logo a{
+    display: block;
     background:#fff;
     margin:5px;
     padding:10px 30px;
@@ -3593,9 +3594,7 @@ li#field_14_4,.uael-modal-custom li#field_14_8,.uael-modal-custom li#field_14_9{
 }
 .case-study-logo img{
     max-height:80px;
-    position:relative;
-    top:50%;
-    transform:translateY(-50%)
+    position:relative;    
 }
 .case-study-body{
     padding:25px
