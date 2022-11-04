@@ -1,0 +1,28 @@
+CACHE MANIFEST
+# v1.0 : 10-08-2014
+ 
+CACHE:
+# pages
+# index.html
+
+# fonts
+/wp-content/themes/muteweb/assets/fonts/ProximaNovaT-Thin.woff2
+/wp-content/themes/muteweb/assets/fonts/ProximaNova-Regular.woff2
+/wp-content/themes/muteweb/assets/fonts/SamsungSharpSans.woff2
+/wp-content/themes/muteweb/assets/fonts/SamsungSharpSans-Medium.woff2
+/wp-content/themes/muteweb/assets/fonts/SamsungSharpSans-Bold.woff
+
+# styles & scripts
+# css/theme.css
+# js/jquery.min.js
+# js/default.js
+ 
+# images
+# /favicon.ico
+# images/logo.png
+ 
+NETWORK:
+# login.php
+ 
+FALLBACK:
+# offline.html
