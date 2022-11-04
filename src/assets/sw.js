@@ -7,7 +7,7 @@ self.addEventListener('install', event => {
       .then(cache =>
         cache.addAll([
           /* images */
-          'https://msg91.com//wp-content/uploads/sites/4/2020/07/msg91_logo.svg',
+          'https://msg91.com/wp-content/uploads/sites/4/2020/07/msg91_logo.svg',
 
           /* fonts */
           'https://msg91.com/wp-content/themes/muteweb/assets/fonts/ProximaNovaT-Thin.woff2',
