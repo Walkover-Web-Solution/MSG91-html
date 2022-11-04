@@ -351,7 +351,7 @@ template{
     color:inherit
 }
 h1,h2,h3,h4{
-    font-family:'Samsung Sharp Sans';
+    font-family:'Samsung Sharp Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight:700
 }
 .font-weight-thin{
@@ -2042,7 +2042,7 @@ div#gdpr-cookie-consent-bar{
     bottom:250px
 }
 .samsung-sharp-sans{
-    font-family:'Samsung Sharp Sans'!important
+    font-family:'Samsung Sharp Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important
 }
 .width-58{
     width:58%!important;
@@ -2122,7 +2122,7 @@ div#gdpr-cookie-consent-bar{
     font-size:15px;
     padding:12px 5px 0 10px;
     line-height:23px;
-    font-family:samsung sharp sans;
+    font-family:samsung sharp sans, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     border:10px solid transparent;
     border-image:url(/wp-content/uploads/2020/07/border-box.png) 10 round
 }
@@ -5755,7 +5755,7 @@ h2.voicetopheading {
     background-position: center center !important;
     background-size: auto !important;
     padding: 15px 61px;
-    font-family: Samsung Sharp Sans;
+    font-family: Samsung Sharp Sans, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 31px;
@@ -6520,7 +6520,7 @@ body.contact-us  div.elementor-tabs > div.elementor-tabs-wrapper {
     background-position: center center ;
     background-size: auto ;
     padding: 15px 61px;
-    font-family: Samsung Sharp Sans;
+    font-family: Samsung Sharp Sans, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     line-height: 38px;
     text-align: center;
 }
