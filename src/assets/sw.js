@@ -1,44 +1,45 @@
 const cacheName = "v1";
 
 // Install a service worker
-self.addEventListener("install", (event) => {
-    console.log("Service Workers: Installed");
-});
+window.addEventListener('load', () => {
+  if (!('serviceWorker' in navigator)) {
+    // service workers not supported 😣
+    return
+  }
 
-// Cache and return requests
-self.addEventListener("fetch", (event) => {
-    event.respondWith(
-        fetch(event.request)
-            .then((res) => {
-                //Make clone of response
-                const resClone = res.clone();
-                // Open cache
-                caches.open(cacheName).then((cache) => {
-                    // Add response to the cache
-                    cache.put(event.request, resClone);
-                });
-                return res;
-            })
-            .catch((err) =>
-                caches
-                    .match(event.request)
-                    .then((res) => res)
-                    .catch((err) => console.error(err))
-            )
-    );
-});
+  navigator.serviceWorker.register('/sw.js').then(
+    () => {
+      // registered! 👍🏼
+    },
+    err => {
+      console.error('SW registration failed! 😱', err)
+    }
+  )
+})
 
-// Update a service worker
-self.addEventListener("activate", (event) => {
-    event.waitUntil(
-        caches.keys().then((cacheNames) => {
-            return Promise.all(
-                cacheNames.map((cache) => {
-                    if (cache !== cacheName) {
-                        return caches.delete(cache);
-                    }
-                })
-            );
-        })
-    );
-});
+self.addEventListener('install', event => {
+  event.waitUntil(
+    caches
+      .open('my-site-name')
+      .then(cache =>
+        cache.addAll([
+          'favicon.ico',
+          'style.css',
+          'script.js',
+          'https://fonts.googleapis.com/css?family=Inconsolata:400,700'
+        ])
+      )
+  )
+})
+
+self.addEventListener('fetch', event => {
+  event.respondWith(
+    caches.match(event.request).then(response => {
+      if (response) {
+        //we found an entry in the cache!
+        return response
+      }
+      return fetch(event.request)
+    })
+  )
+})
