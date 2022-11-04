@@ -59,6 +59,21 @@
 <!-- <link rel="icon" href="/wp-content/uploads/sites/4/2020/06/cropped-logo-32x32.png" sizes="32x32">
 <link rel="icon" href="/wp-content/uploads/sites/4/2020/06/cropped-logo-192x192.png" sizes="192x192">
 <link rel="apple-touch-icon" href="/wp-content/uploads/sites/4/2020/06/cropped-logo-180x180.png"> -->
+<script>
+    // Install a service worker
+    window.addEventListener('load', () => {
+        if (!('serviceWorker' in navigator)) {
+            // service workers not supported 😣
+            return
+        }
 
-<!-- JS -->
-<script src="sw.js"></script>
+        navigator.serviceWorker.register('/sw.js').then(
+            () => {
+                // registered! 👍🏼
+            },
+            err => {
+                console.error('SW registration failed! 😱', err)
+            }
+        )
+    })
+</script>
