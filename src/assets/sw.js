@@ -20,13 +20,14 @@ window.addEventListener('load', () => {
 self.addEventListener('install', event => {
   event.waitUntil(
     caches
-      .open('my-site-name')
+      .open(cacheName)
       .then(cache =>
         cache.addAll([
-          'favicon.ico',
-          'style.css',
-          'script.js',
-          'https://fonts.googleapis.com/css?family=Inconsolata:400,700'
+          'https://msg91.com/wp-content/themes/muteweb/assets/fonts/ProximaNovaT-Thin.woff2',
+          'https://msg91.com/wp-content/themes/muteweb/assets/fonts/ProximaNova-Regular.woff2',
+          'https://msg91.com/wp-content/themes/muteweb/assets/fonts/SamsungSharpSans.woff2',
+          'https://msg91.com/wp-content/themes/muteweb/assets/fonts/SamsungSharpSans-Medium.woff2',
+          'https://msg91.com/wp-content/themes/muteweb/assets/fonts/SamsungSharpSans-Bold.woff'          
         ])
       )
   )
