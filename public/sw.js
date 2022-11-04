@@ -6,11 +6,18 @@ self.addEventListener('install', event => {
       .open(cacheName)
       .then(cache =>
         cache.addAll([
+          /* images */
+          'https://msg91.com//wp-content/uploads/sites/4/2020/07/msg91_logo.svg',
+
+          /* fonts */
           'https://msg91.com/wp-content/themes/muteweb/assets/fonts/ProximaNovaT-Thin.woff2',
           'https://msg91.com/wp-content/themes/muteweb/assets/fonts/ProximaNova-Regular.woff2',
           'https://msg91.com/wp-content/themes/muteweb/assets/fonts/SamsungSharpSans.woff2',
           'https://msg91.com/wp-content/themes/muteweb/assets/fonts/SamsungSharpSans-Medium.woff2',
-          'https://msg91.com/wp-content/themes/muteweb/assets/fonts/SamsungSharpSans-Bold.woff'          
+          'https://msg91.com/wp-content/themes/muteweb/assets/fonts/SamsungSharpSans-Bold.woff',
+          
+          /* css */
+          '/wp-content/plugins/elementor/assets/lib/font-awesome/css/fontawesome.min.css?ver=5.15.3'
         ])
       )
   )
