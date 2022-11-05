@@ -328,22 +328,28 @@
   <script>
     getSmsPricing();
   </script>
-  <% } %>
+<% } %>
 
-    <% if (page.route==='transactional-email' ) { %>
-      <script>
-        getEmailPricing();
-      </script>
-      <% } %>
+<% if (page.route==='transactional-email' ) { %>
+  <script>
+    getEmailPricing();
+  </script>
+<% } %>
 
-        <% if (page.route==='pricing' ) { %>
-          <script>
-            getSmsPricing();
-            getEmailPricing();
-            getSendOtpPricing();
-            getWhatsAppPricing();
-          </script>
-          <% } %>
+<% if (page.route==='whatsapp' ) { %>
+  <script>
+    getWhatsAppPricing();
+  </script>
+<% } %>
+
+<% if (page.route==='pricing' ) { %>
+  <script>
+    getSmsPricing();
+    getEmailPricing();
+    getSendOtpPricing();
+    getWhatsAppPricing();
+  </script>
+<% } %>
 
 
             <script type='text/javascript' id='muteweb-pricing-new-script-js-js-extra'>

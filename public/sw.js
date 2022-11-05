@@ -15,9 +15,14 @@ self.addEventListener('install', event => {
           '/wp-content/themes/muteweb/assets/fonts/SamsungSharpSans.woff2',
           '/wp-content/themes/muteweb/assets/fonts/SamsungSharpSans-Medium.woff2',
           '/wp-content/themes/muteweb/assets/fonts/SamsungSharpSans-Bold.woff',
+          '/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-solid-900.eot',
+          '/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-solid-900.woff2',
+          '/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-solid-900.woff',
+          '/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-solid-900.ttf',
+          '/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-solid-900.svg',
           
           /* css */
-          '/wp-content/plugins/elementor/assets/lib/font-awesome/css/fontawesome.min.css?ver=5.15.3'
+          '/wp-content/plugins/elementor/assets/lib/font-awesome/css/fontawesome.min.css'
         ])
       )
   )

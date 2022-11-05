@@ -4435,6 +4435,8 @@ a.sub_menu_text {
   overflow: hidden;
   width: 100%;
   z-index: 999;
+  position: sticky;
+  top: 80px;
 }
 img.menu_img {
     height: 24px!important;
