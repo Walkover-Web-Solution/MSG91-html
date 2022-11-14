@@ -488,23 +488,24 @@ jQuery(document).ready(function ($) {
   });
 
   fetch('https://api.db-ip.com/v2/free/self')
-    .then(response => {
-        // handle the response
-        var countryCode = response.countryCode;
-        console.log('response', response);
-        switch (countryCode) {
-          case 'UK':
-          case 'GB':
-            $("#sms_country").val("United Kingdom").change();
-            break;          
-          default:
-            $("#sms_country").val("India").change();
-        }
-    })
-    .catch(error => {
-        // handle the error
-        console.log('error', error);
-    });
+  .then(response => response.json())
+  .then(response => {
+      // handle the response
+      console.log('response', response);
+      var countryCode = response.countryCode;
+      switch (countryCode) {
+        case 'UK':
+        case 'GB':
+          $("#sms_country").val("United Kingdom").change();
+          break;          
+        default:
+          $("#sms_country").val("India").change();
+      }
+  })
+  .catch(error => {
+      // handle the error
+      console.log('error', error);
+  });
 
   // handle select2 change
   jQuery("#sendotp_country").on("change", function () {
