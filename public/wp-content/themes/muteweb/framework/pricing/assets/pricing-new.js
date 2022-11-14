@@ -499,15 +499,16 @@ jQuery(document).ready(function ($) {
           $("#sms_country").val("United Kingdom").change();
           $("#sendotp_country").val("United Kingdom").change();
           $("#currency_email").val('USD').change();
-          $("#currencytext_email").text('USD')
+          $(".currencytext_email").html('USD');          
           break;          
         default:
           $("#sms_country").val("India").change();
           $("#sendotp_country").val("India").change();
           $("#currency_email").val('INR').change();
-          $("#currencytext_email").text('INR')
+          $(".currencytext_email").html('INR')
           
       }
+      getEmailPricing();
   })
   .catch(error => {
       // handle the error
