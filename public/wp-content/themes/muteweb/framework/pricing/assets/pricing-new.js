@@ -487,6 +487,25 @@ jQuery(document).ready(function ($) {
     }, 500);
   });
 
+  fetch('https://api.db-ip.com/v2/free/self')
+    .then(response => {
+        // handle the response
+        var countryCode = response.countryCode;
+        console.log('response', response);
+        switch (countryCode) {
+          case 'UK':
+          case 'GB':
+            $("#sms_country").val("United Kingdom").change();
+            break;          
+          default:
+            $("#sms_country").val("India").change();
+        }
+    })
+    .catch(error => {
+        // handle the error
+        console.log('error', error);
+    });
+
   // handle select2 change
   jQuery("#sendotp_country").on("change", function () {
     // adding dynamic condition on 23rd dec 2020 to change currency as country
