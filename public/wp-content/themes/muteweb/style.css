@@ -1110,8 +1110,7 @@ footer.footer-main ul{
 .requst-access-bt a.uael-trigger, .contact-tab-box .read-btn,.customer-btn-box 
 .get-stared-bt{
     background:#000;
-    color:#fff;
-    padding: 12px 45px !important;
+    color:#fff;    
     font-size:18px;
     transition: .4s;
     border-radius: 5px !important;
