@@ -557,8 +557,7 @@ jQuery(document).ready(function ($) {
     }
   });
 
-  jQuery("#sendOtp_pricingSlab").change(function () {
-    console.log('sendOtp_pricingSlab', 'change');
+  jQuery("#sendOtp_pricingSlab").change(function () {    
     let val = jQuery(this).val();
     jQuery("#sendOtp_noOfSMS").val(_ARR[val - 1]);
     // show hide div and prevent api call
