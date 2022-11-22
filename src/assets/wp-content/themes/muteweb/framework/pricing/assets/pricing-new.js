@@ -517,9 +517,10 @@ jQuery(document).ready(function ($) {
 
   // handle select2 change
   jQuery("#sendotp_country").on("change", function () {
+    console.log('this.value',this.value);
     // adding dynamic condition on 23rd dec 2020 to change currency as country
     if (this.value === "India") {
-      $("#sendOtp_currencys").val("INR").change();
+      $("#sendOtp_currency").val("INR").change();
       $(".sendOtp_currencytext").html("INR");
       $("#promo").css({ display: "block" });
     } else {
@@ -557,6 +558,7 @@ jQuery(document).ready(function ($) {
   });
 
   jQuery("#sendOtp_pricingSlab").change(function () {
+    console.log('sendOtp_pricingSlab', 'change');
     let val = jQuery(this).val();
     jQuery("#sendOtp_noOfSMS").val(_ARR[val - 1]);
     // show hide div and prevent api call
