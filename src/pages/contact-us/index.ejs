@@ -911,8 +911,7 @@ country: '/in'
                                                 
                                                         <div id="elementor-tab-content-2841" class="elementor-tab-content elementor-clearfix" data-tab="1"
                                                             role="tabpanel" aria-labelledby="elementor-tab-title-2841" tabindex="0" hidden="false">
-                                                            <div class="calendly-inline-widget" data-url="https://calendly.com/sales-msg91/pre-sales"
-                                                                style="min-width:320px;height:900px;"></div>
+                                                            
                                                         </div>
                                                 
                                                         <div id="elementor-tab-content-2842" class="elementor-tab-content elementor-clearfix" data-tab="2"
@@ -1150,57 +1149,25 @@ country: '/in'
         <link rel="stylesheet" id="e-animations-css"
             href="/wp-content/plugins/elementor/assets/lib/animations/animations.min.css?ver=3.5.5" type="text/css"
             media="all">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <!--  Code for Phone Number Fields Accepts only numbers -->
-
-
-
-        <!-- Code To Change the Tabs into the Dropdown in Mobile View -->
-
-        <!-- Jquery Scroll to div  ----->
-
-
-
-
-
-
-
     </div>
+<script>
+    fetch('https://api.db-ip.com/v2/free/self')
+    .then(response => response.json())
+    .then(response => {
+        var countryCode = response.countryCode;
+        console.log('countryCode', countryCode);
+        if(countryCode === 'IN'){            
+            jQuery('#elementor-tab-content-2841').html(`<div class="calendly-inline-widget" data-url="https://calendly.com/sales-msg91/pre-sales" style="min-width:320px;height:900px;"></div>`);
+        } else {
+            jQuery('#elementor-tab-content-2841').html(`<div class="calendly-inline-widget" data-url="https://calendly.com/msg91international/talktoexpert" style="min-width:320px;height:900px;"></div>`);
+        }
+    })
+    .catch(error => {
+        // handle the error
+        console.log('error', error);
+    });
+ 
+</script>    
 </body>
 
 </html>
