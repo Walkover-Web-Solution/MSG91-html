@@ -2985,7 +2985,7 @@ ul.elementor-icon-list-items.elementor-inline-items .elementor-inline-item {
 .elementor-button:hover,
 .elementor-button:visited {
     color: #fff;
-    background-color: #454545 !important;
+    background-color: #454545;
 }
 
 .elementor-button-content-wrapper {

@@ -323,7 +323,7 @@ function drawNewEmailPricingUI() {
   }
 }
 
-function drawUiForWhatsApp(conf, plans){  
+function drawUiForWhatsApp(conf, plans){ 
   let selectedCurrency = jQuery("#currency_wtsapp").val();
   if(selectedCurrency === 'IND') selectedCurrency = 'INR';
   let symbol;

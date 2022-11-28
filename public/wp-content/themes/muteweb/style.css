@@ -1092,7 +1092,17 @@ footer.footer-main ul{
 .font-14,.powered-by a{
     font-size:14px
 }
-
+.elementor-btn-tag{
+    cursor: default;
+    background: none !important;
+}
+.elementor-btn-tag:hover,
+.elementor-btn-tag:focus,
+.elementor-btn-tag:visited
+{
+    background: none !important;
+    cursor: default;
+}
 .elementor-element-0dc1832 .elementor-widget{
     display:contents
 }
@@ -1104,8 +1114,14 @@ footer.footer-main ul{
     flex-wrap:wrap;
     align-items:center
 }
-.contact-tab-box .elementor-tab-desktop-title.elementor-active{
-    border-top:none
+.elementor-widget-tabs.elementor-tabs-view-horizontal .elementor-tab-desktop-title.elementor-active{
+    border: 1px solid #000 !important;
+    border-radius: 5px;
+}
+.elementor-widget-tabs.elementor-tabs-view-horizontal .elementor-tab-desktop-title.elementor-active:before,
+.elementor-widget-tabs.elementor-tabs-view-horizontal .elementor-tab-desktop-title.elementor-active:after
+{
+    border-color: transparent !important;
 }
 .requst-access-bt a.uael-trigger, .contact-tab-box .read-btn,.customer-btn-box 
 .get-stared-bt{
@@ -2196,11 +2212,9 @@ div#gdpr-cookie-consent-bar{
 }
 .contact-tab-box .elementor-tabs-wrapper{
     display:flex;
-    justify-content:flex-start;
+    justify-content: center;
 }
-.contact-tab-box .elementor-tab-desktop-title{
-    padding-top:50px!important;
-    padding-bottom:19px!important;
+.contact-tab-box .elementor-tab-desktop-title{        
     position:relative
 }
 .contact-tab-box .elementor-tab-desktop-title a:before{

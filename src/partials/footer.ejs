@@ -325,30 +325,30 @@
 <script type="text/javascript"
   src="/wp-content/themes/muteweb/framework/pricing/assets/bootstrap-slider.min.js"></script>
 
-<% if (page.route==='transactional-sms' ) { %>
+<% if (page.route === 'transactional-sms' ) { %>
   <script>
-    getSmsPricing();
+    //getSmsPricing();
   </script>
 <% } %>
 
-<% if (page.route==='transactional-email' ) { %>
+<% if (page.route === 'transactional-email' ) { %>
   <script>
-    getEmailPricing();
+    //getEmailPricing();
   </script>
 <% } %>
 
-<% if (page.route==='whatsapp' ) { %>
+<% if (page.route === 'whatsapp' ) { %>
   <script>
-    getWhatsAppPricing();
+    //getWhatsAppPricing();
   </script>
 <% } %>
 
-<% if (page.route==='pricing' ) { %>
+<% if (page.route === 'pricing' ) { %>
   <script>
-    getSmsPricing();
+    /* getSmsPricing();
     getEmailPricing();
     getSendOtpPricing();
-    getWhatsAppPricing();
+    getWhatsAppPricing(); */
   </script>
 <% } %>
 
@@ -667,6 +667,31 @@
                 src="https://px.ads.linkedin.com/collect/?pid=2370882&fmt=gif" /> </noscript>
 
             <script type="text/javascript" async src="https://assets.calendly.com/assets/external/widget.js"></script>
+            
+            <script type="text/javascript">
+              jQuery("#gform_14").submit(function( event ) {
+                event.preventDefault();
+                var unindexed_array = jQuery(this).serializeArray();
+                var indexed_array = {};
+                jQuery.map(unindexed_array, function(n, i){
+                    indexed_array[n['name']] = n['value'];
+                });                
+                fetch('https://sokt.io/app/9NrjC9DCeqg6Q9rTZs4m/segmento-early-access', {
+                  method: 'POST', // or 'PUT'
+                  headers: {
+                    'Content-Type': 'application/json',
+                  },
+                  body: JSON.stringify(indexed_array),
+                })
+                .then((response) => response.json())
+                .then((data) => {
+                  console.log('Success:', data);
+                })
+                .catch((error) => {
+                  console.error('Error:', error);
+                });
+              });
+            </script>
 
             <!-- <script type="text/javascript">
     var t = jQuery(".uael-faq-accordion > .uael-accordion-content"),

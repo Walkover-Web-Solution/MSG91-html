@@ -33,7 +33,7 @@
 
 <!-- twitter: -->
 <meta name="twitter:card" content="Startups Form" />
-<meta name="twitter:title" content="Best Cloud Communications Platform in Spain: MSG91" />
+<meta name="twitter:title" content="Startups Form"" />
 <meta name="twitter:description" content="Startups Form" />
 <meta name="twitter:image" content="/wp-content/uploads/sites/4/2020/07/msg91_logo.svg" />
 
@@ -62,7 +62,8 @@
 <!-- <link rel="icon" href="/wp-content/uploads/sites/4/2020/06/cropped-logo-32x32.png" sizes="32x32">
 <link rel="icon" href="/wp-content/uploads/sites/4/2020/06/cropped-logo-192x192.png" sizes="192x192">
 <link rel="apple-touch-icon" href="/wp-content/uploads/sites/4/2020/06/cropped-logo-180x180.png"> -->
-<script>
+
+<!-- <script>
     // Install a service worker
     window.addEventListener('load', () => {
         if (!('serviceWorker' in navigator)) {
@@ -79,7 +80,7 @@
             }
         )
     })
-</script>    
+</script> -->    
 </head>
 <body>
   		
@@ -1718,6 +1719,31 @@ or region</option>                    </select>
                 src="https://px.ads.linkedin.com/collect/?pid=2370882&fmt=gif" /> </noscript>
 
             <script type="text/javascript" async src="https://assets.calendly.com/assets/external/widget.js"></script>
+            
+            <script type="text/javascript">
+              jQuery("#gform_14").submit(function( event ) {
+                event.preventDefault();
+                var unindexed_array = jQuery(this).serializeArray();
+                var indexed_array = {};
+                jQuery.map(unindexed_array, function(n, i){
+                    indexed_array[n['name']] = n['value'];
+                });                
+                fetch('https://sokt.io/app/9NrjC9DCeqg6Q9rTZs4m/segmento-early-access', {
+                  method: 'POST', // or 'PUT'
+                  headers: {
+                    'Content-Type': 'application/json',
+                  },
+                  body: JSON.stringify(indexed_array),
+                })
+                .then((response) => response.json())
+                .then((data) => {
+                  console.log('Success:', data);
+                })
+                .catch((error) => {
+                  console.error('Error:', error);
+                });
+              });
+            </script>
 
             <!-- <script type="text/javascript">
     var t = jQuery(".uael-faq-accordion > .uael-accordion-content"),
