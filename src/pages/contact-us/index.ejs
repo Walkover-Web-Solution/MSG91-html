@@ -895,6 +895,16 @@ country: '/in'
                                                         to hear from you!</h4>
                                                 </div>
                                             </div>
+                                            <div id="mail-and-whatsapp" 
+                                            style="display: flex; 
+                                            align-items: center; 
+                                            width: 100%;
+                                            flex-wrap: wrap;
+                                            margin-top: 20px;
+                                            margin-bottom: 40px;
+                                            justify-content: center;">
+                                                
+                                            </div>
                                             <div class="elementor-element elementor-element-629394f4 contact-tab-box elementor-tabs-view-horizontal elementor-widget elementor-widget-tabs"
                                                 data-id="629394f4" data-element_type="widget"
                                                 data-widget_type="tabs.default">
@@ -907,11 +917,13 @@ country: '/in'
                                                             data-tab="2" role="tab" tabindex="-1" aria-controls="elementor-tab-content-2842" aria-expanded="false">
                                                             <a>Support</a></div>                                                        
                                                     </div>
+                                                    
                                                     <div class="elementor-tabs-content-wrapper" role="tablist" aria-orientation="vertical">
                                                 
                                                         <div id="elementor-tab-content-2841" class="elementor-tab-content elementor-clearfix" data-tab="1"
                                                             role="tabpanel" aria-labelledby="elementor-tab-title-2841" tabindex="0" hidden="false">
-                                                            
+                                                            <div id="calendly-india" style="display: none" class="calendly-inline-widget" data-url="https://calendly.com/sales-msg91/pre-sales" style="min-width:320px;height:900px;"></div>
+                                                            <div id="calendly-global" style="display: none" class="calendly-inline-widget" data-url="https://calendly.com/msg91international/talktoexpert" style="min-width:320px;height:900px;"></div>
                                                         </div>
                                                 
                                                         <div id="elementor-tab-content-2842" class="elementor-tab-content elementor-clearfix" data-tab="2"
@@ -1149,25 +1161,42 @@ country: '/in'
         <link rel="stylesheet" id="e-animations-css"
             href="/wp-content/plugins/elementor/assets/lib/animations/animations.min.css?ver=3.5.5" type="text/css"
             media="all">
-    </div>
-<script>
+    </div>    
+<script async>
     fetch('https://api.db-ip.com/v2/free/self')
     .then(response => response.json())
-    .then(response => {
-        var countryCode = response.countryCode;
-        console.log('countryCode', countryCode);
-        if(countryCode === 'IN'){            
-            jQuery('#elementor-tab-content-2841').html(`<div class="calendly-inline-widget" data-url="https://calendly.com/sales-msg91/pre-sales" style="min-width:320px;height:900px;"></div>`);
+    .then(response => {                
+        var countryCode = response.countryCode;        
+        if(countryCode === 'IN'){   
+            jQuery("#mail-and-whatsapp").html(`
+            <img src="/wp-content/uploads/2022/01/email.svg" class="mr-1">
+            <a href="mailto:sales@msg91.com" class="mr-3">sales@msg91.com</a>
+            <img src="/wp-content/uploads/2022/01/email.svg" class="mr-1">
+            <a href="mailto:support@msg91.com" class="mr-3">support@msg91.com</a>
+            <img src="/wp-content/uploads/2022/01/whatsapp.svg" class="mr-1">
+            <a href="https://wa.me/918818888733">+91 88188 88733</a>
+            `)
+            jQuery("#calendly-india").show();
+            jQuery("#calendly-global").hide();
         } else {
-            jQuery('#elementor-tab-content-2841').html(`<div class="calendly-inline-widget" data-url="https://calendly.com/msg91international/talktoexpert" style="min-width:320px;height:900px;"></div>`);
-        }
+            jQuery("#mail-and-whatsapp").html(`
+            <img src="/wp-content/uploads/2022/01/email.svg" class="mr-1">
+            <a href="mailto:contact@msg91.com" class="mr-3">contact@msg91.com</a>
+            <img src="/wp-content/uploads/2022/01/email.svg" class="mr-1">
+            <a href="mailto:support@msg91.com" class="mr-3">support@msg91.com</a>
+            <img src="/wp-content/uploads/2022/01/whatsapp.svg" class="mr-1">
+            <a href="https://wa.me/918818888733">+91 88188 88733</a>
+            `)
+            jQuery("#calendly-india").hide();
+            jQuery("#calendly-global").show();
+        }        
     })
-    .catch(error => {
-        jQuery('#elementor-tab-content-2841').html(`<div class="calendly-inline-widget" data-url="https://calendly.com/sales-msg91/pre-sales" style="min-width:320px;height:900px;"></div>`);
+    .catch(error => {        
         // handle the error
         console.log('error', error);
     }); 
-</script>    
+</script>
+<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
 </body>
 
 </html>

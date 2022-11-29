@@ -491,7 +491,6 @@ jQuery(document).ready(function ($) {
   .then(response => response.json())
   .then(response => {
       // handle the response
-      console.log('response', response);
       var countryCode = response.countryCode;
       switch (countryCode) {
         case 'UK':
