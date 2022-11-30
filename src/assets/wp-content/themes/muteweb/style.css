@@ -618,7 +618,8 @@ header.main-header{
 .brand-logo{
     width:fit-content;
     display:inline-block;
-    margin-right:30px
+    margin-right:30px;
+    float: left;
 }
 nav.main-nav{
     width:calc(100% - 160px);
@@ -789,11 +790,11 @@ ul.sub-menu{
         height:44px
     }
     header.main-header{
-        padding: 100px 0% 0px 0% !important;
+        padding: 20px 0% 0px 0% !important;
     }
      header.main-header.india{
         /* padding: 30px 3% 20px 3%!important; */
-        padding: 30px 0% 0 0%!important;
+        padding: 20px 0% 0 0%!important;
     }
 	header.main-header.country_header_hide {
        padding: 20px 0 0 0 !important; 
@@ -1303,16 +1304,7 @@ ul.mega-sub-menu a{
     }
     .main-header .brand-logo img {
         padding-top: 10px;
-    }
-    #mega-menu-wrap-primary-menu .mega-menu-toggle.mega-menu-open .mega-toggle-block-1:after {
-        margin: -3px 0 0 0;
-    }
-    #mega-menu-wrap-primary-menu .mega-menu-toggle .mega-toggle-block-1:after {
-        margin: -9px 0 0 5px;
-    }
-    .mega-toggle-blocks-right {
-        margin-right: 2%;
-    }
+    }        
     .platform-bg-box:before {
     right: auto;
     top: auto;
@@ -4442,9 +4434,8 @@ a.sub_menu_text {
 }
 .brand-logo {
     width: fit-content;
-    display: inline-block;
-    margin-right: 15px;
-    margin-left: 10px;
+    display: inline-block;    
+    margin-left: 5px;
 }
 
 #mega-menu-primary-menu li.channel_li:hover{
@@ -5744,9 +5735,7 @@ div#bridgethegap h1.elementor-heading-title {
 .gform_legacy_markup_wrapper span.gfield_required.gfield_required_asterisk {
     margin-left: 0px !important;
 }
-.calendly-inline-widget iframe {
-    height: 860px !important;
-}
+
 .get-a-call-box .calendly-inline-widget {
     height: 840px !important;
 }
@@ -6278,8 +6267,7 @@ div#shortUrlComprehensive h2.elementor-heading-title.elementor-size-default span
         margin-bottom: 20px !important;
     }
     #mega-menu-item-5812 {
-        width: 70px !important;
-        margin-left: 6px !important;
+        width: 70px !important;        
         margin-bottom: -40px !important;
     }
     #mega-menu-item-1983 {
@@ -6293,9 +6281,7 @@ div#shortUrlComprehensive h2.elementor-heading-title.elementor-size-default span
         font-weight: 400 !important;
         font-size: 16px !important;
     }
-    #mega-menu-item-23, #mega-menu-item-2076 {
-        margin-bottom: 20px !important;
-    }
+    
     .main-header li#mega-menu-item-25 a {
         margin-top: 0px !important;
     }
@@ -6317,9 +6303,7 @@ div#shortUrlComprehensive h2.elementor-heading-title.elementor-size-default span
     #select2-sms_country-results {
         max-height: 100% !important;
     }
-    #mega-toggle-block-1 {
-        margin-bottom: 38px;
-    }
+    
     .mega-menu-wrap {
         width: 360px !important;
         margin: 0 auto !important;
@@ -6340,15 +6324,8 @@ div#shortUrlComprehensive h2.elementor-heading-title.elementor-size-default span
     .mega-learning-last ul {
         padding: 0 10px !important;
     }
-    #mega-menu-wrap-primary-menu .mega-menu-toggle .mega-toggle-block-1:after {
-        margin: 10px 0 0 5px;
-    }
-    #mega-menu-wrap-primary-menu .mega-menu-toggle.mega-menu-open .mega-toggle-block-1:after {
-        margin: 16px 0 0 0;
-    }
-    .mega-toggle-blocks-right {
-        margin-right: 0px;
-    }
+    
+    
 }
 #gform_submit_button_20 {
     width: 25% !important;
@@ -6378,10 +6355,7 @@ div#shortUrlComprehensive h2.elementor-heading-title.elementor-size-default span
         margin-left: 0px !important;
     }
 }
-@media screen and (max-width: 376px) and (min-width: 366px) {
-    .brand-logo {
-        margin-left: 11px !important;
-    }
+@media screen and (max-width: 376px) and (min-width: 366px) {    
     .main-header .brand-logo img {
         margin-left: 0px !important;
     }
@@ -6627,4 +6601,26 @@ body.contact-us  div.elementor-tabs > div.elementor-tabs-wrapper {
     background-color: #000000 !important;
     color: #ffffff !important;
     box-shadow: -1px -1px 3px 2px #ccc;
+}
+
+#mail-and-whatsapp-sales, #mail-and-whatsapp-support{
+    display: flex; 
+    align-items: center; 
+    width: 100%;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    justify-content: center;
+}
+
+#mail-and-whatsapp-sales > a, #mail-and-whatsapp-support > a{
+    background: #f0f0f0;
+    border-radius: 4px;
+    padding: 3px 6px;
+    margin: 10px 10px 0 0;
+}
+
+#calendly-india iframe, #calendly-global iframe{
+    height: 1000px;
+    overflow: hidden;
 }

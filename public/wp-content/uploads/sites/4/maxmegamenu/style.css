@@ -1144,10 +1144,7 @@
 #mega-menu-wrap-primary-menu #mega-menu-primary-menu li.mega-menu-item-has-children.mega-collapse-children.mega-toggle-on > a.mega-menu-link > span.mega-indicator:after {
   content: '\f142';
 }
-@media only screen and (max-width: 1000px) {
-  #mega-menu-wrap-primary-menu #mega-menu-primary-menu li.mega-menu-item-has-children > a.mega-menu-link > span.mega-indicator {
-    float: right;
-  }
+@media only screen and (max-width: 1000px) {  
   #mega-menu-wrap-primary-menu #mega-menu-primary-menu li.mega-menu-item-has-children.mega-toggle-on > a.mega-menu-link > span.mega-indicator:after {
     content: '\f142';
   }
@@ -1258,9 +1255,7 @@
 #mega-menu-wrap-primary-menu .mega-menu-toggle .mega-toggle-blocks-left .mega-toggle-block {
   margin-left: 6px;
 }
-#mega-menu-wrap-primary-menu .mega-menu-toggle .mega-toggle-blocks-left .mega-toggle-block:only-child {
-  margin-right: 6px;
-}
+
 #mega-menu-wrap-primary-menu .mega-menu-toggle .mega-toggle-blocks-center {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
@@ -1282,11 +1277,10 @@
   justify-content: flex-end;
 }
 #mega-menu-wrap-primary-menu .mega-menu-toggle .mega-toggle-blocks-right .mega-toggle-block {
-  margin-right: 6px;
+  margin-right: 16px;
+  margin-top: -10px;
 }
-#mega-menu-wrap-primary-menu .mega-menu-toggle .mega-toggle-blocks-right .mega-toggle-block:only-child {
-  margin-left: 6px;
-}
+
 #mega-menu-wrap-primary-menu .mega-menu-toggle .mega-toggle-block {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1318,8 +1312,7 @@
   cursor: pointer;
 }
 #mega-menu-wrap-primary-menu .mega-menu-toggle .mega-toggle-block-1:after {
-  content: url(https://staging-msg91.kinsta.cloud/wp-content/uploads/2022/04/megamenu.svg);
-  margin: 10px 0 0 5px;
+  content: url(https://staging-msg91.kinsta.cloud/wp-content/uploads/2022/04/megamenu.svg); 
 }
 #mega-menu-wrap-primary-menu .mega-menu-toggle .mega-toggle-block-1 .mega-toggle-label {
   color: #222;
@@ -1332,8 +1325,7 @@
   display: inline;
 }
 #mega-menu-wrap-primary-menu .mega-menu-toggle.mega-menu-open .mega-toggle-block-1:after {
-  content: url(https://staging-msg91.kinsta.cloud/wp-content/uploads/2022/04/Union.svg);
-  margin: 16px 0 0 0;
+  content: url(https://staging-msg91.kinsta.cloud/wp-content/uploads/2022/04/Union.svg);  
 }
 #mega-menu-wrap-primary-menu .mega-menu-toggle.mega-menu-open .mega-toggle-block-1 .mega-toggle-label-open {
   display: inline;
@@ -2681,9 +2673,7 @@ body .reach-form-text h2 {
 #mega-menu-wrap-direct-signup-menu .mega-menu-toggle .mega-toggle-blocks-left .mega-toggle-block {
   margin-left: 6px;
 }
-#mega-menu-wrap-direct-signup-menu .mega-menu-toggle .mega-toggle-blocks-left .mega-toggle-block:only-child {
-  margin-right: 6px;
-}
+
 #mega-menu-wrap-direct-signup-menu .mega-menu-toggle .mega-toggle-blocks-center {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
@@ -2707,9 +2697,7 @@ body .reach-form-text h2 {
 #mega-menu-wrap-direct-signup-menu .mega-menu-toggle .mega-toggle-blocks-right .mega-toggle-block {
   margin-right: 6px;
 }
-#mega-menu-wrap-direct-signup-menu .mega-menu-toggle .mega-toggle-blocks-right .mega-toggle-block:only-child {
-  margin-left: 6px;
-}
+
 #mega-menu-wrap-direct-signup-menu .mega-menu-toggle .mega-toggle-block {
   display: -webkit-box;
   display: -ms-flexbox;

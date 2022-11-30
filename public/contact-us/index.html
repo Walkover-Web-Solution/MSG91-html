@@ -156,7 +156,7 @@
 					data-hover-intent-interval="100">
 					<li class="mega-unsticky mega-productchannel mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-has-children mega-menu-megamenu mega-align-bottom-left mega-menu-grid mega-menu-item-6594 unsticky productchannel"
 						id="mega-menu-item-6594">
-						<a class="mega-menu-link" href="javascript:void(0);" aria-haspopup="true" aria-expanded="false"
+						<a class="mega-menu-link" aria-haspopup="true" aria-expanded="false"
 							tabindex="0">Product<span class="mega-indicator"></span></a>
 						<ul class="mega-sub-menu">
 							<li class="mega-menu-row" id="mega-menu-6594-0">
@@ -1315,17 +1315,8 @@
                                                     <h4 class="elementor-heading-title elementor-size-default">We’d love
                                                         to hear from you!</h4>
                                                 </div>
-                                            </div>
-                                            <div id="mail-and-whatsapp" 
-                                            style="display: flex; 
-                                            align-items: center; 
-                                            width: 100%;
-                                            flex-wrap: wrap;
-                                            margin-top: 20px;
-                                            margin-bottom: 40px;
-                                            justify-content: center;">
-                                                
-                                            </div>
+                                            </div>                                                                                        
+                                            
                                             <div class="elementor-element elementor-element-629394f4 contact-tab-box elementor-tabs-view-horizontal elementor-widget elementor-widget-tabs"
                                                 data-id="629394f4" data-element_type="widget"
                                                 data-widget_type="tabs.default">
@@ -1343,13 +1334,15 @@
                                                 
                                                         <div id="elementor-tab-content-2841" class="elementor-tab-content elementor-clearfix" data-tab="1"
                                                             role="tabpanel" aria-labelledby="elementor-tab-title-2841" tabindex="0" hidden="false">
-                                                            <div id="calendly-india" style="display: none" class="calendly-inline-widget" data-url="https://calendly.com/sales-msg91/pre-sales" style="min-width:320px;height:900px;"></div>
-                                                            <div id="calendly-global" style="display: none" class="calendly-inline-widget" data-url="https://calendly.com/msg91international/talktoexpert" style="min-width:320px;height:900px;"></div>
+                                                            <div id="mail-and-whatsapp-sales"></div>
+                                                            <div id="calendly-india" style="display: none" class="calendly-inline-widget" data-url="https://calendly.com/sales-msg91/pre-sales" style="min-width:320px; height:1100px; overflow: hidden;"></div>
+                                                            <div id="calendly-global" style="display: none" class="calendly-inline-widget" data-url="https://calendly.com/msg91international/talktoexpert" style="min-width:320px;height:1100px; overflow: hidden;"></div>
                                                         </div>
                                                 
                                                         <div id="elementor-tab-content-2842" class="elementor-tab-content elementor-clearfix" data-tab="2"
                                                             role="tabpanel" aria-labelledby="elementor-tab-title-2842" tabindex="0" hidden="hidden">
-                                                            <div class="calendly-inline-widget" style="min-width: 320px;height: 630px" data-url="https://calendly.com/support--msg91"></div>
+                                                            <div id="mail-and-whatsapp-support"></div>
+                                                            <div class="calendly-inline-widget" style="min-width: 320px;height: 1100px" data-url="https://calendly.com/support--msg91"></div>
                                                         </div>
                                                         
                                                     </div>
@@ -1587,26 +1580,43 @@
     fetch('https://api.db-ip.com/v2/free/self')
     .then(response => response.json())
     .then(response => {                
-        var countryCode = response.countryCode;        
+        var countryCode = response.countryCode;
+        var whatsapp = `
+                <a href="https://wa.me/918818888733" target="_blank">
+                    <img src="/wp-content/uploads/2022/01/whatsapp.svg" > +91 88188 88733
+                </a>`;     
         if(countryCode === 'IN'){   
-            jQuery("#mail-and-whatsapp").html(`
-            <img src="/wp-content/uploads/2022/01/email.svg" class="mr-1">
-            <a href="mailto:sales@msg91.com" class="mr-3" target="_blank">sales@msg91.com</a>
-            <img src="/wp-content/uploads/2022/01/email.svg" class="mr-1">
-            <a href="mailto:support@msg91.com" class="mr-3" target="_blank">support@msg91.com</a>
-            <img src="/wp-content/uploads/2022/01/whatsapp.svg" class="mr-1">
-            <a href="https://wa.me/918818888733" target="_blank">+91 88188 88733</a>
+            jQuery("#mail-and-whatsapp-sales").html(`                            
+                <a href="mailto:sales@msg91.com" target="_blank">
+                    <img src="/wp-content/uploads/2022/01/email.svg" >
+                    sales@msg91.com
+                </a>            
+            ${whatsapp}
+            `)
+            jQuery("#mail-and-whatsapp-support").html(`                        
+                <a href="mailto:support@msg91.com" target="_blank">
+                    <img src="/wp-content/uploads/2022/01/email.svg" >
+                    support@msg91.com
+                </a>
+            </div>
+            ${whatsapp}
             `)
             jQuery("#calendly-india").show();
             jQuery("#calendly-global").hide();
         } else {
-            jQuery("#mail-and-whatsapp").html(`
-            <img src="/wp-content/uploads/2022/01/email.svg" class="mr-1">
-            <a href="mailto:contact@msg91.com" class="mr-3" target="_blank">contact@msg91.com</a>
-            <img src="/wp-content/uploads/2022/01/email.svg" class="mr-1">
-            <a href="mailto:support@msg91.com" class="mr-3" target="_blank">support@msg91.com</a>
-            <img src="/wp-content/uploads/2022/01/whatsapp.svg" class="mr-1">
-            <a href="https://wa.me/918818888733" target="_blank">+91 88188 88733</a>
+            jQuery("#mail-and-whatsapp-sales").html(`
+                <a href="mailto:contact@msg91.com" target="_blank">
+                    <img src="/wp-content/uploads/2022/01/email.svg" >
+                    contact@msg91.com
+                </a>
+            ${whatsapp}
+            `)
+            jQuery("#mail-and-whatsapp-support").html(`            
+                <a href="mailto:support@msg91.com" target="_blank">
+                    <img src="/wp-content/uploads/2022/01/email.svg" >
+                    support@msg91.com
+                </a>
+            ${whatsapp}
             `)
             jQuery("#calendly-india").hide();
             jQuery("#calendly-global").show();
