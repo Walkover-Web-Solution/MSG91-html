@@ -4910,8 +4910,9 @@ ul#mega-menu-primary-menu li a:hover {
 
 
 #tabbingpricing .elementor-tabs .elementor-tab-title {    
-    border-radius: 5px;
-    height: 42px;
+    border-radius: 5px;    
+    margin: 0 5px;
+    text-align: center;
 }
 @media only screen and (max-width: 1024px){
     .whatsapp .dropdown-content {
@@ -4928,10 +4929,7 @@ ul#mega-menu-primary-menu li a:hover {
     }
     .shorturl .dropdown-content {
         min-width: 585px;
-    }
-    #tabbingpricing .elementor-tabs .elementor-tab-title {        
-        font-size: 10px;
-    }
+    }    
 }
 @media screen and (max-width: 1000px) and (min-width: 400px) {
     #mega-menu-wrap-primary-menu #mega-menu-primary-menu {
@@ -5324,18 +5322,13 @@ div#pricingsmscl {
     font-family: Proxima Nova;
 }
 /* For tabbing css in pricing page */
-#tabingchaneel .elementor-tabs-wrapper .elementor-tab-title a:before{
-    float: left;
-}
+
 #tabingchaneel .elementor-tabs-wrapper .elementor-tab-title a{
-    display: block;
-    line-height: 24px;
+    display: block;    
 }
 #tabingchaneel .elementor-tabs-wrapper .elementor-tab-title a:before{
     content: url(/wp-content/uploads/2022/01/sms.svg);
-    display: block;
-    margin-right: 10px;
-    
+    display: block;        
 }
 #tabingchaneel .elementor-tabs-wrapper .elementor-tab-title:nth-child(2) a:before{
     content: url(/wp-content/uploads/2022/01/email.svg);
