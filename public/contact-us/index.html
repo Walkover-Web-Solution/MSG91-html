@@ -1585,13 +1585,16 @@
                 <a href="https://wa.me/918818888733" target="_blank">
                     <img src="/wp-content/uploads/2022/01/whatsapp.svg" > +91 88188 88733
                 </a>`;     
-        if(countryCode === 'IN'){   
-            jQuery("#mail-and-whatsapp-sales").html(`                            
+        var call = `
+                <a href="tel:918818888733" target="_blank">
+                    <img style="height: 20px;" src="/wp-content/uploads/2022/01/call.svg" > +91 88188 88733
+                </a>`;     
+        if(countryCode === 'IN'){
+            jQuery("#mail-and-whatsapp-sales").html(`
                 <a href="mailto:sales@msg91.com" target="_blank">
                     <img src="/wp-content/uploads/2022/01/email.svg" >
                     sales@msg91.com
-                </a>            
-            ${whatsapp}
+                </a>                        
             `)
             jQuery("#mail-and-whatsapp-support").html(`                        
                 <a href="mailto:support@msg91.com" target="_blank">
@@ -1600,6 +1603,7 @@
                 </a>
             </div>
             ${whatsapp}
+            ${call}
             `)
             jQuery("#calendly-india").show();
             jQuery("#calendly-global").hide();
@@ -1608,8 +1612,7 @@
                 <a href="mailto:contact@msg91.com" target="_blank">
                     <img src="/wp-content/uploads/2022/01/email.svg" >
                     contact@msg91.com
-                </a>
-            ${whatsapp}
+                </a>            
             `)
             jQuery("#mail-and-whatsapp-support").html(`            
                 <a href="mailto:support@msg91.com" target="_blank">
