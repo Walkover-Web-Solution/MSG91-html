@@ -361,14 +361,8 @@ function drawUiForWhatsApp(conf, plans){
           target="_blank">WhatsApp
           Price</a><br>`
     }  
-    html+=`<a class="sms-free-bt getfreenewbuton"
-        href="/contact-us/"
-        target="_blank">Talk to
-        Experts</a>
-      <!--<div class="mainaddon">
-        <h5 class="addsonemail">*Extra</h5>
-        <h6 style="color: #5d6164;" class="peremailprice">₹0.10</h6>
-      </div>-->
+    html+=`<a class="sms-free-bt getfreenewbuton cutom_btn"
+    href="https://control.msg91.com/signup/">Get Started</a>      
     </div>`;    
   });
   html += `<div
@@ -381,8 +375,7 @@ function drawUiForWhatsApp(conf, plans){
     class="amountnewemail whatsapp_bottom">
     Custom Sessions</p>
   <a class="sms-free-bt getfreenewbuton cutom_btn"
-    href="/contact-us/">Talk to
-    Experts</a>
+    href="https://control.msg91.com/signup/">Get Started</a>
 </div>`
   jQuery("#whats-app-plans").html(html);
 }
