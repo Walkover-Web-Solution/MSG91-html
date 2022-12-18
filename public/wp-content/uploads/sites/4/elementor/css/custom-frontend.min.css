@@ -5072,12 +5072,6 @@ button.swiper-pagination-bullet {
     height: 300px
 }
 
-.elementor-heading-title {
-    padding: 0;
-    margin: 0;
-    line-height: 1
-}
-
 .elementor-widget-heading .elementor-heading-title[class*=elementor-size-]>a {
     color: inherit;
     font-size: inherit;
@@ -6461,4 +6455,60 @@ body.elementor-page .elementor-widget-menu-anchor {
 .elementor-widget-video .e-hosted-video .elementor-video {
     -o-object-fit: cover;
     object-fit: cover
+}
+
+/* common style __________________________________________________ */
+.ms-heading{
+    font-size: 44px;
+    font-weight: bold;
+    font-style: normal;
+    line-height: 55px;
+    text-align: center;
+}
+.ms-sub-heading{
+    font-size: 24px;
+    text-align: center;
+}
+.uael-faq-accordion{
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: #D1D1D1;
+    margin-bottom: 20px;
+    border-radius: 6px;
+}
+.uael-faq-accordion .uael-accordion-title{
+    padding: 14px 20px 14px 20px;
+}
+
+.uael-accordion-icon, .uael-question-span{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.uael-accordion-icon-right{
+    margin-right: 10px;
+}
+.uael-accordion-icon-opend,.uael-accordion-icon-closed{
+    color: #D1D1D1;
+}
+.uael-accordion-content {
+    font-size: 18px;
+    color: rgba(34, 34, 34, 0.66);
+    padding: 0px 20px 25px 20px;
+}
+.elementor-button {
+    font-size: 18px;
+    font-weight: 600;
+    fill: #222222;
+    color: #222222 !important;
+    background-color: rgba(2, 1, 1, 0) !important;    
+}
+.elementor-align-icon-right {
+    margin-left: 12px;
+}
+.elementor-widget-wrap{
+    flex-direction: column!important;
+}
+.elementor-widget-text-editor{
+    flex: 1 1 auto!important;
 }

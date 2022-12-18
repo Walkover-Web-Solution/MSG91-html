@@ -896,7 +896,7 @@ span.extrovert-list {
 		</div>
 	</li>
 	
-	<li class="channel_li" id="sub_menu_text_overview"><a href="#OverView" class="sub_menu_text bold_underline">Overview</a></li>
+	<li class="channel_li" id="sub_menu_text_overview"><a href="#OverView" class="sub_menu_text" >Overview</a></li>
 	<li class="channel_li" id="sub_menu_text_feature"><a href="#Full_featured" class="sub_menu_text">Features</a></li>
 </ul>
 </div>		</div>
@@ -2197,14 +2197,14 @@ or region</option>                    </select>
                   }
                 }
               }
-              jQuery(window).on("load", function () {
+              /* jQuery(window).on("load", function () {
                 var urlHash = window.location.href.split("#")[1];
                 if (urlHash) {
                   jQuery('html,body').animate({
                     scrollTop: jQuery('.pricing-bottom-box #' + urlHash).offset().top - 200
                   }, 50);
                 }
-              });
+              }); */
 
               /* Uncaught Error: reCAPTCHA has already been rendered in this element give error reCAPTCHA then use this below code :- */
               jQuery('.ginput_recaptcha').each(function (i) {
@@ -2294,7 +2294,7 @@ or region</option>                    </select>
               });
             </script>
             <!-- Jquery Scroll to div  ----->
-            <script>
+            <!-- <script>
               jQuery(document).ready(function () {
                 jQuery("#start-free-trail-id,#get-start-now-id,#request-demo-id").click(function () {
                   jQuery('html, body').animate({
@@ -2302,7 +2302,7 @@ or region</option>                    </select>
                   });
                 });
               });
-            </script>
+            </script> -->
 
             <script async type="text/javascript"> _linkedin_partner_id = "2370882";
               window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
@@ -2342,27 +2342,10 @@ or region</option>                    </select>
                 .catch((error) => {
                   console.error('Error:', error);
                 });
-              });
+              });              
             </script>
 
-            <!-- <script type="text/javascript">
-    var t = jQuery(".uael-faq-accordion > .uael-accordion-content"),
-    i = jQuery(".uael-faq-container").data("layout");
-    jQuery(".uael-accordion-title").off("click keypress");
-    jQuery(".uael-accordion-title").on("click keypress", function(e) {
-                e.preventDefault(), $this = jQuery(this),
-                    function(e) {
-                        if ("toggle" == i) e.hasClass("uael-title-active") ? (e.removeClass("uael-title-active"), e.attr("aria-expanded", "false")) : (e.addClass("uael-title-active"), e.attr("aria-expanded", "true")), e.next(".uael-accordion-content").slideToggle("normal", "swing");
-                        else if ("accordion" == i) e.hasClass("uael-title-active") ? (e.removeClass("uael-title-active"), e.next(".uael-accordion-content").slideUp("normal", "swing", function() {
-                            a(this).prev().removeClass("uael-title-active"), e.attr("aria-expanded", "false")
-                        })) : (t.hasClass("uael-title-active") && t.removeClass("uael-title-active"), t.slideUp("normal", "swing", function() {
-                            a(this).prev().removeClass("uael-title-active")
-                        }), e.addClass("uael-title-active"), e.next(".uael-accordion-content").slideDown("normal", "swing", function() {
-                            a(this).prev().addClass("uael-title-active"), e.attr("aria-expanded", "true")
-                        }))
-                    }($this)
-            });
-</script> -->
+            
 
             </body>
 </body>

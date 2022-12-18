@@ -5067,12 +5067,6 @@ button.swiper-pagination-bullet {
     height: 300px
 }
 
-.elementor-heading-title {
-    padding: 0;
-    margin: 0;
-    line-height: 1
-}
-
 .elementor-widget-heading .elementor-heading-title[class*=elementor-size-]>a {
     color: inherit;
     font-size: inherit;
