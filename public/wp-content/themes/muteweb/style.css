@@ -946,6 +946,7 @@ ul.sub-menu{
 .footer-top-bg{
     height:460px;
     margin-bottom:-65px;
+    margin-top : 100px;
     background:url(/images/footer-bg.png) no-repeat 
 center bottom,linear-gradient(to bottom,transparent,transparent 44%,#000 35%,#000) 
 no-repeat center bottom
@@ -2302,7 +2303,7 @@ select{
     background-repeat: no-repeat;
 }
 .ntegrate-bt .elementor-button-text {
-    border-bottom: 1px solid;
+    border-bottom: none;
 }
 .sms-api > .elementor-column-wrap, .email-api .elementor-column-wrap, .voice-api 
 .elementor-column-wrap{
