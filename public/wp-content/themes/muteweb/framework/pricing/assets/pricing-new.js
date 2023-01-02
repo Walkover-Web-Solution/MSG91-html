@@ -362,7 +362,7 @@ function drawUiForWhatsApp(conf, plans){
           Price</a><br>`
     }  
     html+=`<a class="sms-free-bt getfreenewbuton cutom_btn"
-    href="https://control.msg91.com/signup/">Get Started</a>      
+    href="https://control.msg91.com/signup/" target="_blank">Get Started</a>      
     </div>`;    
   });
   html += `<div
@@ -375,7 +375,7 @@ function drawUiForWhatsApp(conf, plans){
     class="amountnewemail whatsapp_bottom">
     Custom Sessions</p>
   <a class="sms-free-bt getfreenewbuton cutom_btn"
-    href="https://control.msg91.com/signup/">Get Started</a>
+    href="https://control.msg91.com/signup/" target="_blank">Get Started</a>
 </div>`
   jQuery("#whats-app-plans").html(html);
 }

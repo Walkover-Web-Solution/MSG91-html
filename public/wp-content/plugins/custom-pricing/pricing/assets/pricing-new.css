@@ -826,10 +826,13 @@ p.sms-notext {
     background-size: contain;
 }
 .maindropdwnprice {
-    background: #F2F2F2;
+    background: black;
     padding-left: 18px;
     padding-right: 35px;
     border-radius: 4px;
+    color: white;
+    margin-left: 26px;
+    
 }
 a.getfreenewbuton {
     background: #fff !important;
