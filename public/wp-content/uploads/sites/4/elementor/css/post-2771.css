@@ -532,7 +532,7 @@
 .elementor-2771 .elementor-element.elementor-element-7000bb0 {
     transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
     margin-top: 100px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 
 .elementor-2771 .elementor-element.elementor-element-7000bb0>.elementor-background-overlay {
@@ -912,7 +912,7 @@
 
     .elementor-2771 .elementor-element.elementor-element-7000bb0 {
         margin-top: 0px;
-        margin-bottom: 100px;
+        margin-bottom: 50px;
     }
 
     .elementor-2771 .elementor-element.elementor-element-83b06aa>.elementor-element-populated>.elementor-widget-wrap {

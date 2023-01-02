@@ -946,7 +946,7 @@ ul.sub-menu{
 .footer-top-bg{
     height:460px;
     margin-bottom:-65px;
-    margin-top: 30px;
+    margin-top : 80px;
     background:url(/images/footer-bg.png) no-repeat 
 center bottom,linear-gradient(to bottom,transparent,transparent 44%,#000 35%,#000) 
 no-repeat center bottom
@@ -2303,7 +2303,7 @@ select{
     background-repeat: no-repeat;
 }
 .ntegrate-bt .elementor-button-text {
-    border-bottom: 1px solid;
+    border-bottom: none;
 }
 .sms-api > .elementor-column-wrap, .email-api .elementor-column-wrap, .voice-api 
 .elementor-column-wrap{
@@ -5313,7 +5313,7 @@ div#pricingsmscl {
 }
 .makesstand ul.engagment li {
     list-style: none;
-    padding-left: 30px;
+    padding-left: 0px;
     line-height: 30px;
     font-size: 24px;
 }
@@ -5684,7 +5684,7 @@ h2.accesclsindia {
 }
 div#bridgethegap h1.elementor-heading-title {
     margin: 10px 0px 0px 0px;
-    padding: 7px 10px 4px 10px;
+    padding: 7px 10px 4px 0px;
     background-image: url(/wp-content/uploads/2022/01/Path-23863-8.svg);
     background-repeat: no-repeat;
     background-size: contain;
@@ -6402,7 +6402,7 @@ body.contact-us  div.elementor-tabs > div.elementor-tabs-wrapper {
     margin-right: 20px;
 }
 #whatsappVisitHelpDoc .elementor-widget-container .elementor-button-wrapper {
-    margin-left: 20px;
+    margin-left: 40px;
 }
 
 #disableBtn {
@@ -6532,7 +6532,7 @@ body.contact-us  div.elementor-tabs > div.elementor-tabs-wrapper {
     }
     #whatsappVisitHelpDoc .elementor-widget-container .elementor-button-wrapper {
         margin-left: 0px;
-        margin-top: 30px;
+        margin-top: 0px;
     }
     #whatsappSignUpNow ,#whatsappVisitHelpDoc {
         text-align: center;
