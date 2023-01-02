@@ -1067,7 +1067,7 @@ h1.entry-title {
 }
 
 .elementor-widget:not(:last-child) {
-    margin-bottom: 20px
+    margin-bottom: 2px
 }
 
 .elementor-widget:not(:last-child).elementor-absolute,

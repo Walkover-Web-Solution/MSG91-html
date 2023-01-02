@@ -946,6 +946,7 @@ ul.sub-menu{
 .footer-top-bg{
     height:460px;
     margin-bottom:-65px;
+    margin-top: 30px;
     background:url(/images/footer-bg.png) no-repeat 
 center bottom,linear-gradient(to bottom,transparent,transparent 44%,#000 35%,#000) 
 no-repeat center bottom
