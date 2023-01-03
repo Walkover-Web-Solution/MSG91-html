@@ -5086,7 +5086,8 @@ button.swiper-pagination-bullet {
 }
 
 .elementor-widget-heading .elementor-heading-title.elementor-size-xl {
-    font-size: 39px
+    font-size: 39px;
+    margin-left: 500px;
 }
 
 .elementor-widget-heading .elementor-heading-title.elementor-size-xxl {
