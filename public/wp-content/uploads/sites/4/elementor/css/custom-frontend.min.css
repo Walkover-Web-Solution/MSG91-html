@@ -1065,7 +1065,7 @@ h1.entry-title {
 }
 
 .elementor-widget:not(:last-child) {
-    margin-bottom: 20px
+    margin-bottom: 2px
 }
 
 .elementor-widget:not(:last-child).elementor-absolute,
@@ -5091,7 +5091,8 @@ button.swiper-pagination-bullet {
 }
 
 .elementor-widget-heading .elementor-heading-title.elementor-size-xl {
-    font-size: 39px
+    font-size: 39px;
+    margin-left: 500px;
 }
 
 .elementor-widget-heading .elementor-heading-title.elementor-size-xxl {
@@ -6511,4 +6512,5 @@ body.elementor-page .elementor-widget-menu-anchor {
 }
 .elementor-widget-text-editor{
     flex: 1 1 auto!important;
+    margin-top: 30px;
 }
