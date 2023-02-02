@@ -345,7 +345,7 @@ function drawUiForWhatsApp(conf, plans){
       o.currency.short_name === selectedCurrency && o.plan_type.name === 'Monthly'
     );
     let freeSession = plan.plan_services[0].service_credit.free_credits;
-    freeSession = freeSession/1000;    
+    freeSession = freeSession;    
     html+=`<div class="pricing-sms-wrap col-md-4 pricingboxfirst">
       <div class="mainblueemail">
         <h3 class="bluetopcircle">${plan.name}</h3>
@@ -353,7 +353,7 @@ function drawUiForWhatsApp(conf, plans){
       <h4 class="monthsystem">        
         ${symbol}${amount.plan_amount}/${amount.plan_type.name}
       </h4>
-      <p class="amountnewemail">${freeSession}K Sessions</p>`
+      <p class="amountnewemail">${freeSession}K Free value</p>`
     if(freeSession >= 10 ){
       html+=`<p class="margin_zero"> + </p>
         <a href="https://developers.facebook.com/docs/whatsapp/pricing"
