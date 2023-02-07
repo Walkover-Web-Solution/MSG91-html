@@ -358,7 +358,7 @@ function drawUiForWhatsApp(conf, plans){
       <h4 class="monthsystem">        
         ${symbol}${amount.plan_amount}/${amount.plan_type.name}
       </h4>
-      <p class="amountnewemail">${freeSession.free_credits}K Free balance</p>`
+      <p class="amountnewemail">${freeSession.free_credits} Free balance</p>`
     if(freeSession.free_credits >= 10 ){
       html+=`<p class="margin_zero"> + </p>
         <a href="https://developers.facebook.com/docs/whatsapp/pricing"
