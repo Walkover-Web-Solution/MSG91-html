@@ -1,19 +1,19 @@
 {
-  "name": "nanogen",
-  "version": "1.0.0",
-  "main": "site.config.js",
+  "name": "port",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "start": "nanogen start",
-    "build": "nanogen build"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start ",
+    "lint": "next lint"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "nanogen": "^0.4.2"
-  },
-  "description": "",
   "dependencies": {
-    "node-fetch": "^2.6.7"
+    "@next/font": "13.1.6",
+    "next": "13.1.6",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "serve": "^14.2.0",
+    "yarn": "^1.22.19"
   }
 }
