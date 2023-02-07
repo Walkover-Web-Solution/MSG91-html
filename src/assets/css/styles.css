@@ -1,9 +1,9 @@
-html, body {
+ html, body {
   margin: 0;
   padding: 0;
 }
 
-body {
+/* body {
   color: #333;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
@@ -24,7 +24,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* .header, .content, .footer {
   padding: 15px 30px;
-} */
+} 
 
 code {
   background-color: #f3f6fa;
@@ -34,4 +34,132 @@ code {
   padding: 3px;
   word-break: normal;
   white-space: pre;
+} */ */
+
+.updateBar {
+  font-size: 0.8rem;
+  font-weight: 400;
+  line-height: 1;
+  background-color: gainsboro;
+}
+
+.height {
+  height: 19px;
+}
+
+.navigationBar {
+  font-size: 0.8rem;
+  font-weight: 400;
+  background-color: white;
+}
+
+.badgeHeight {
+height: 25px;
+line-height: 1.7;
+}
+
+.info {
+  font-family: 'Libre Baskerville';
+font-style: normal;
+font-weight: 350;
+height: 200px;
+}
+
+.badge_Height {
+  font-size: 1.0rem;
+  height: 30px;
+}
+
+.back_color1 {
+  background-color: #AA50F6;
+}
+
+.back_color2 {
+  background-color: #F2CA55;
+}
+
+.back_color3 {
+  background-color: #E55CA1;
+}
+
+.back_color4 {
+  background-color: #1157A6;
+}
+
+.btn-light{
+  width: 165px;
+}
+
+.sms {
+  background-color: rgba(77, 160, 255, 0.16);
+}
+
+.email {
+  background-color: rgba(204, 82, 41, 0.12);
+}
+
+.whatsapp {
+  background-color: rgba(111, 202, 113, 0.16);
+}
+
+.telegram {
+  background-color: rgba(37, 162, 224, 0.1);
+}
+
+.voice {
+  background-color: rgba(105, 107, 239, 0.12);
+}
+
+.rcs {
+  background-color: rgba(56, 146, 224, 0.12);
+}
+
+.img {
+  height: 25px;
+  width: 21px;
+}
+
+.card-title1 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1E75BA;;
+}
+
+.card-text1 {
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+
+.heading {
+  font-family: 'Libre Baskerville';
+font-weight: 400;
+}
+
+.img_Adjusting {
+  height: 10px;
+}
+
+/* .channel_Info {
+  width: 850px;
+  margin-left: -206px;
+  margin-top: 95px;
+} */
+
+.union {
+  height: 20px;
+  width: 17px;
+}
+
+.learn_More {
+  border: 1px solid #1E75BA;
+border-radius: 4px;
+color: #1E75BA;
+background: white;
+font-size: 0.8rem;
+}
+
+.image_Blank {
+  background-color: #d3d3d3;
+  height: 200px;
+  width: 400px;
 }
