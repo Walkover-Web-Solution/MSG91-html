@@ -1,0 +1,14 @@
+# dependencies
+/node_modules
+/nanogen
+/package-lock.json
+
+
+# System Files
+.DS_Store
+Thumbs.db
+/yarn.lock
+
+
+# Local Netlify folder
+.netlify
