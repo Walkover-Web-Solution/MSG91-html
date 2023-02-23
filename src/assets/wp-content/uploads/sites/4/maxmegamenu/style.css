@@ -1312,7 +1312,7 @@
   cursor: pointer;
 }
 #mega-menu-wrap-primary-menu .mega-menu-toggle .mega-toggle-block-1:after {
-  content: url(https://staging-msg91.kinsta.cloud/wp-content/uploads/2022/04/megamenu.svg); 
+  content: url(/2020/12//wp-content/uploads/2022/01/megamenu.svg); 
 }
 #mega-menu-wrap-primary-menu .mega-menu-toggle .mega-toggle-block-1 .mega-toggle-label {
   color: #222;
@@ -1325,7 +1325,7 @@
   display: inline;
 }
 #mega-menu-wrap-primary-menu .mega-menu-toggle.mega-menu-open .mega-toggle-block-1:after {
-  content: url(https://staging-msg91.kinsta.cloud/wp-content/uploads/2022/04/Union.svg);  
+  content: url(/2020/12//wp-content/uploads/2022/01/Union.svg);  
 }
 #mega-menu-wrap-primary-menu .mega-menu-toggle.mega-menu-open .mega-toggle-block-1 .mega-toggle-label-open {
   display: inline;
